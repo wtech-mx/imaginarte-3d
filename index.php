@@ -1,93 +1,137 @@
 <?php
   include("inicio.php");
+  
+
 ?>
 
 <body>
+
   <div itemscope itemtype="http://schema.org/Article">
 
-  <div id="slider">
-    <figure>
-	  <img src="images/slide3.jpg">
-      <img src="images/slide1.jpg">
-      <img src="images/slide2.jpg">
-      <img src="images/slide3.jpg">
 
-    </figure>
+<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+  <!-- Indicators -->
+  <ol class="carousel-indicators">
+    <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+    <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+    <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+  </ol>
+
+  <!-- Wrapper for slides -->
+  <div class="carousel-inner">
+    <div class="item active">
+      <img src="images/slide1.jpg" alt="...">
+      <div class="carousel-caption">
+        ...
+      </div>
+    </div>
+    <div class="item">
+      <img src="images/slide2.jpg" alt="...">
+      <div class="carousel-caption">
+        ...
+      </div>
+    </div>
+
+     <div class="item">
+      <img src="images/slide3.jpg" alt="...">
+      <div class="carousel-caption">
+        ...
+      </div>
+    </div>
+
+    <div class="item">
+      <img src="images/slide4.jpg" alt="...">
+      <div class="carousel-caption">
+        ...
+      </div>
+    </div>
+    ...
   </div>
 
-      <!-- Start callto Area -->
-      <section class="callto pt-50 pb-50">
-        <div class="container">
-          <div class="row">
-             <div class="col-lg-9 callto-left">
-              <h1 class="text-uppercase">Más que un anuncio es una presentación de tu negocio</h1>
-             </div>
+  <!-- Controls -->
+  <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+    <span class="glyphicon glyphicon-chevron-left"></span>
+  </a>
+  <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+    <span class="glyphicon glyphicon-chevron-right"></span>
+  </a>
+</div>
 
+
+
+      <div class="about py-lg-5 py-md-4 py-3" id="about">   
+        <div class="container py-sm-5 py-4">      
+          <div class="row">
+            <div class="card mb-3" >
+              <div class="row no-gutters" style="padding: 30px;">
+                <div class="col-md-4">
+                    <img src="images/bgteam.png" alt="">
+                    <title>Placeholder</title>
+                    <rect width="100%" height="100%" fill="#868e96"/>
+                    <text x="50%" y="50%" fill="#dee2e6" dy=".3em"></text>
+                  </svg>
+
+                </div>
+                <div class="col-md-8 p-5" style="padding: 10px;">
+                  <div class="card-body">
+                    <h2 itemprop="author" style="color: #683cc0"><strong>¿Quiénes somos?</strong></h2>
+                     <div class="barra" style="background-color: #683cc0;padding: 5px;width: 10px;position: absolute;top:70px;height:90px;left: -5px"></div>
+                    <p class="card-text "  itemprop="description" style="color: #000">Somos un gran equipo de especialistas en Publicidad Exterior e Interior, nuestra principal labor es satisfacer las  necesidades de comunicación y difusión de nuestros clientes a través de diferentes técnicas innovadoras.</p>
+                    <h2 itemprop="author" style="color: #00bdb4"><strong>¿Qué hacemos?</strong></h2>
+                    <div class="barra" style="background-color: #00bdb4;padding: 5px;width: 10px;position: absolute;top:200px;height:200px;left: -5px"></div>
+                    <p class="card-text "  itemprop="description" style="color: #000">
+                      • Letras 3D o Letras Corpóreas  <br>
+                      • Impresión digital (lona, vinil, papel tapiz, microperforado, tela, etc.) <br>
+                      • Anuncios luminosos <br>
+                      • Señaletica creativa <br>
+                      • Artes graficas <br>
+                      • Tableros decorativos <br>
+                    </p>
+                    <h2 itemprop="author" style="color: #683cc0"><strong>¿Por qué elegirnos?</strong></h2>
+                    <div class="barra" style="background-color: #683cc0;padding: 5px;width: 10px;position: absolute;top:440px;height:260px;left: -5px"></div>
+                    <p class="card-text "  itemprop="description" style="color: #000">
+                      • Somos Profesionales en Publicidad exterior e interior – diseñamos, fabricamos e instalamos <br>
+                      • Ofrecemos garantía en todos nuestros trabajos <br>
+                      • Servicio personalizado <br>
+                      • Mejor costo = Mejor calidad <br>
+                      • Somos integrales <br>
+                      • Cuidamos cada detalle <br>
+                      • Nos respalda grandes proyectos y más de 10 años de servicio <br>
+                      • Brindamos diferentes soluciones de publicidad <br>
+                    </p>
+                   </div>
+                </div>
+              </div>
+            </div>
           </div>
-        </div>  
-      </section>
-<!-- services -->
-<section class="services py-lg-5 py-md-4 py-3" id="services">
-  <div class="container  py-sm-5 py-4">
-        <div class="title-heading text-center mb-sm-5 mb-4">
-          <h3 itemprop="Service">Productos</h3>
-          <h4 itemprop="Service"></h4>
         </div>
-</div>   
+      </div>
+
+
 
 <?php 
 include("container-services.php");
  ?>
 
-
-      <div class="about py-lg-5 py-md-4 py-3" id="about">
-        <div class="container py-sm-5 py-4">
-        
-          <div class="row">
-
-          
-            <div class="title-heading-about">
-              <h3 itemprop="name">¿Quiénes somos?, ¿Qué hacemos?  y ¿Por qué elegirnos?</h3>
-              <h2 itemprop="author">¿Quiénes somos?</h2>
-            </div>
-
-             <p itemprop="description">Somos un gran equipo de especialistas en Publicidad Exterior e Interior, nuestra principal labor es satisfacer las  necesidades de comunicación y difusión de nuestros clientes a través de diferentes técnicas innovadoras.<br><hr>
-
-              <h2 itemprop="author">¿Qué hacemos?</h2>
-              <p itemprop="description">
-              • Letras 3D o Letras Corpóreas  <br>
-              • Impresión digital (lona, vinil, papel tapiz, microperforado, tela, etc.) <br>
-              • Anuncios luminosos <br>
-              • Señaletica creativa <br>
-              • Artes graficas <br>
-              • Tableros decorativos <br><hr>
-
-              <h2 itemprop="author">¿Por qué elegirnos?</h2>
-
-        <p itemprop="description">
-          • Somos Profesionales en Publicidad exterior e interior – diseñamos, fabricamos e instalamos <br>
-          • Ofrecemos garantía en todos nuestros trabajos <br>
-          • Servicio personalizado <br>
-          • Mejor costo = Mejor calidad <br>
-          • Somos integrales <br>
-          • Cuidamos cada detalle <br>
-          • Nos respalda grandes proyectos y más de 10 años de servicio <br>
-          • Brindamos diferentes soluciones de publicidad <br>
-        </p>
-
-            </strong>
-            </p>
-        
-          
+      <!-- Start callto Area -->
+      <section class="callto pt-50 pb-50 fluid">
+        <div class="container">
+          <div class="row text-rigth">
+             <div class="col-lg-9 callto-left fluid">
+              <h1 class="text-uppercase text-center">IMAGINA - COTIZA - CREA </h1>
+               <div class="barra" style="background-color: #00ffa0;padding: 5px;width: 70%;position: absolute;top:90%;left: 21%">
+               </div>
+             </div>
           </div>
-        </div>
-      </div>
-<!-- about -->
+          <h1 class="text-uppercase text-center" style="">TE ACOMPAÑAMOS DE PRINCIPIO A FIN</h1>
+        </div>  
+      </section>
 
-</section>
+  <?php 
 
+  include("views/index.view.php");
 
-
+   ?>
 
     <section class="wthree-row w3-gallery py-lg-5 py-md-4 py-3" id="gallery">
         <div class="container-fluid text-center">
@@ -430,39 +474,51 @@ include("container-services.php");
     </section>
 
 
-    <div class="contact py-lg-5 py-md-4 py-3" id="contact">
-    <div class="container py-sm-5 py-4">
-      <div class="title-heading text-center mb-sm-5 mb-4">
-        <h3>CONTACTO</h3>
-  
-      </div>
-      <div class="row">
-        <div class="col-lg-4 col-sm-6">
+        <section class="callto pt-50 pb-50 fluid "style="background: #fff">
+        <div class="container text-center">
+          <div class="row text-center">
+             <div class="col-lg-9 callto-left" style="left: 15%;">
+              <p class="">Nuestro Objetivo es facilitar el proceso brindandote diferentes opciones que pueden acomodarse a tu presupuesto , entregas e instalaciones</p>
+             </div>
+          </div>
+           <a href="https://wa.me/5215587703080?text=Hola%20vi%20su%20pagina%20web,%20quisiera%20mas%20información %20de%20sus%20servicios" class="btn btn-lg btn-primary" target="blank" style="border-radius: 30px;background-image: linear-gradient(to right, #7e59db, #6f4bcb, #5f3cbb, #4f2eab, #3f209b); width: 70%;height: 70px">CONTACTANOS</a>
+        </div>  
+      </section>  
 
-        </div>
-        <div class="col-lg-8 col-sm-6">
-        <div class="contact-middle">
-          <h3>Escribe tus datos</h3>
-          <form action="#" method="post">
-            <div class="form-group">
-            <label>Nombre</label>
-             <input type="text" class="form-control" placeholder="First name" required="">
+
+    <div class="contact py-lg-5 py-md-4 py-3" id="contact">
+        <div class="container py-sm-5 py-4">
+          <div class="title-heading text-center mb-sm-5 mb-4">
+            <h3>CONTACTO</h3>
+      
+          </div>
+          <div class="row">
+            <div class="col-lg-4 col-sm-6">
+
             </div>
-            <div class="form-group">
-            <label>Email </label>
-            <input type="email" class="form-control"  placeholder="Email" required="">            
+            <div class="col-lg-8 col-sm-6">
+            <div class="contact-middle">
+              <h3>Escribe tus datos</h3>
+              <form action="#" method="post">
+                <div class="form-group">
+                <label>Nombre</label>
+                 <input type="text" class="form-control" placeholder="First name" required="">
+                </div>
+                <div class="form-group">
+                <label>Email </label>
+                <input type="email" class="form-control"  placeholder="Email" required="">            
+                </div>
+                <div class="form-group">
+                <label>Texto</label>
+                  <textarea class="form-control" rows="3" required=""></textarea>
+                </div>
+                <button type="submit" class="btn btn-2">Enviar</button>
+              </form>
             </div>
-            <div class="form-group">
-            <label>Texto</label>
-              <textarea class="form-control" rows="3" required=""></textarea>
+            
             </div>
-            <button type="submit" class="btn btn-2">Enviar</button>
-          </form>
         </div>
-        
-        </div>
-    </div>
-  </div>
+      </div>
   </div>
   
   <div class="map-w3ls">

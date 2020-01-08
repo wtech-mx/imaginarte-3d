@@ -1692,18 +1692,19 @@ p.counter {
   position: absolute;
   top: 0;
   bottom: 0;
-  left: 0;
+  left: 5%;
   right: 0;
-  width: 100%;
-  height: 90%;
+  width: 90%;
+  height: 83%;
   opacity: 0;
   transition: .5s ease;
   background-color: #008CBA;
-    cursor: pointer;
+  cursor: pointer;
 }
 
  .yellow{
     background-color: #9A7D0A;
+
 }
 
 .porple{
@@ -1750,6 +1751,12 @@ p.counter {
   transform: translate(-50%, -50%);
   text-align: center;}
 
+    .card-serv{
+-webkit-box-shadow: 13px 11px 33px -3px rgba(54,54,54,1);
+-moz-box-shadow: 13px 11px 33px -3px rgba(54,54,54,1);
+box-shadow: 13px 11px 33px -3px rgba(54,54,54,1);
+  }
+
 
 /*NAVBAR*/
 
@@ -1779,7 +1786,7 @@ header {
 }
 
 header nav {
-  background:#AE5BDE;
+background-image: linear-gradient(to right, #4f1aa6, #5b2cb3, #673cc1, #734bce, #7f5adc);
   z-index:1000;
   width:100%;
   margin:0px auto;
@@ -2103,9 +2110,7 @@ img {vertical-align: middle;
 .callto, .callto
 .btn-white:hover, 
 .footer-social a:hover, .generic-banner {
-  background-image: -moz-linear-gradient(0deg, #5D0E8B 0%, #0ca2cf 100%);
-  background-image: -webkit-linear-gradient(0deg, #5D0E8B 0%, #0ca2cf 100%);
-  background-image: -ms-linear-gradient(0deg, #5D0E8B 0%, #0ca2cf 100%);
+background-image: linear-gradient(to right, #503db3, #2355be, #0068c1, #0078be, #0085b7, #0094bc, #00a2be, #00afbe, #00c4c5, #00d9c2, #00edb6, #00ffa0);
    }
 
 @media (max-width: 991px) {
@@ -2230,7 +2235,7 @@ img {vertical-align: middle;
 }
 
 nav{
-    background: #AE5BDE;
+    background-image: linear-gradient(to right, #4f1aa6, #5b2cb3, #673cc1, #734bce, #7f5adc);
 }
 
 .navbar-toggle{

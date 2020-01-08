@@ -57,18 +57,41 @@ include("plug-analitcs.php");
 }(document, 'script', 'facebook-jssdk'));</script>
 
 <!-- Your customer chat code -->
-<div class="fb-customerchat"
+<!--<div class="fb-customerchat"
   attribution=setup_tool
   page_id="886997161494916"
   theme_color="#7646ff"
   logged_in_greeting="¡Hola!  ¿En que podemos ayudarte?"
   logged_out_greeting="¡Hola!  ¿En que podemos ayudarte?">
 </div>
+-->
 
-
-  <a href="https://wa.me/5215587703080?text=Hola%20vi%20su%20pagina%20web,%20quisiera%20mas%20información %20de%20sus%20servicios" class="whatsapp" target="_blank"> 
+  <!--<a href="https://wa.me/5215587703080?text=Hola%20vi%20su%20pagina%20web,%20quisiera%20mas%20información %20de%20sus%20servicios" class="whatsapp" target="_blank"> 
     <i class="fa fa-whatsapp whatsapp-icon"></i>
-  </a>
+  </a>-->
+
+  <script type="text/javascript" style="">
+    (function () {
+        var options = {
+            facebook: "886997161494916", // Facebook page ID
+            whatsapp: "+52 1 55 8770 3080", // WhatsApp number
+            email: "ventas@imaginarte3d.com.mx", // Email
+            sms: "5537356447", // Sms phone number
+            call: "5537356447", // Call phone number
+            company_logo_url: "", // URL of company logo (png, jpg, gif)
+            greeting_message: "", // Text of greeting message
+            call_to_action: "Cotiza ahora", // Call to action
+            wa_vb_message: "", // Message for WhatsApp
+            button_color: "#4f1aa6", // Color of button
+            position: "left", // Position may be 'right' or 'left'
+            order: "facebook,whatsapp,email,sms,call" // Order of buttons
+        };
+        var proto = document.location.protocol, host = "whatshelp.io", url = proto + "//static." + host;
+        var s = document.createElement('script'); s.type = 'text/javascript'; s.async = true; s.src = url + '/widget-send-button/js/init.js';
+        s.onload = function () { WhWidgetSendButton.init(host, proto, options); };
+        var x = document.getElementsByTagName('script')[0]; x.parentNode.insertBefore(s, x);
+    })();
+</script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
 
 
@@ -77,7 +100,7 @@ include("plug-analitcs.php");
 
 </head>
 
-  <div itemscope itemtype="http://schema.org/Article">
+<div itemscope itemtype="http://schema.org/Article">
 
 <nav class="navbar" role="navigation">
   <div class="container-fluid">
@@ -89,7 +112,9 @@ include("plug-analitcs.php");
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand white" href="">imaginarte 3D</a>
+      <a class="navbar-brand white" href="index.php">
+        <img class="" src="images/LOGO/new-log.png" alt=""style="padding: 0px 0px 0px 30px;position: relative;top: -15px">
+      </a>
     </div>
 
     <!-- Collect the nav links, forms, and other content for toggling -->
@@ -106,7 +131,7 @@ include("plug-analitcs.php");
       <ul class="nav navbar-nav navbar-right">
 
         <li class="active"><a class="leters-nav" href="index.php">Inicio</a></li>
-        <li><a class="leters-nav" href="index.php#about">¿Quines somos?</a></li>
+        <li><a class="leters-nav" href="#about">¿Quines somos?</a></li>
             <li class="dropdown">
           <a class="leters-nav" href="#" class="dropdown-toggle" data-toggle="dropdown">Productos <span class="caret"></span></a>
 
@@ -114,9 +139,7 @@ include("plug-analitcs.php");
             <li><a class="leters-nav"href="Letras-3D-Corporeas.php">Letras 3D Corporeas</a></li>
             <li><a href="Anuncios-Luminosos.php">Anuncios Luminosos</a></li>
             <li><a href="Señaletica.php">Señaletica</a></li>
-
             <li><a href="Impresion-Digital.php">Impresion Digital</a></li>
-
             <li><a href="Promocionales.php">Promocionales</a></li>
             <li><a href="Serigrafia-y-vinil-textil.php">Artes Graficas</a></li>
             <li><a href="Tableros-decorativos-en-acrílico.php">Tableros y letreros de acrilico</a></li>
@@ -124,8 +147,8 @@ include("plug-analitcs.php");
           </ul>
 
         </li>
-        <li><a  class="leters-nav" href="index.php#gallery">Nuestros trabajos</a></li>
-        <li><a  class="leters-nav" href="index.php#contact">Contacto</a></li>
+        <li><a  class="leters-nav" href="#gallery">Nuestros trabajos</a></li>
+        <li><a  class="leters-nav" href="#contact">Contacto</a></li>
 
       </ul>
     </div><!-- /.navbar-collapse -->

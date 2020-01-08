@@ -49,11 +49,11 @@ include("plug-analitcs.php");
 
      	<link rel='stylesheet' href='http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css'>
 
-    <div class="social-bar">
+<!--    <div class="social-bar">
     <a href="https://m.facebook.com/imaginart3D/?ref=bookmarks" class="icon icon-facebook" target="_blank"></a>
     <a href="https://www.youtube.com/channel/UCEJK7dFCaXKXX8ZOOwy02QA" class="icon icon-youtube" target="_blank"></a>
     <a href="https://www.instagram.com/imaginarte3d_/" class="icon icon-instagram" target="_blank"></a>
-  </div>
+  </div>-->
 
     <!-- Load Facebook SDK for JavaScript -->
 <div id="fb-root"></div>
@@ -74,18 +74,42 @@ include("plug-analitcs.php");
 }(document, 'script', 'facebook-jssdk'));</script>
 
 <!-- Your customer chat code -->
-<div class="fb-customerchat"
+<!--<div class="fb-customerchat"
   attribution=setup_tool
   page_id="886997161494916"
   theme_color="#7646ff"
   logged_in_greeting="¡Hola!  ¿En que podemos ayudarte?"
   logged_out_greeting="¡Hola!  ¿En que podemos ayudarte?">
-</div>
+</div>-->
 
 
-  <a href="https://wa.me/5215587703080?text=Hola%20vi%20su%20página%20web,%20quisiera%20más%20información %20sobre%20sus%20servicios" class="whatsapp" target="_blank"> 
+ <!-- <a href="https://wa.me/5215587703080?text=Hola%20vi%20su%20página%20web,%20quisiera%20más%20información %20sobre%20sus%20servicios" class="whatsapp" target="_blank"> 
     <i class="fa fa-whatsapp whatsapp-icon"></i>
-  </a>
+  </a>-->
+
+<script type="text/javascript" style="">
+    (function () {
+        var options = {
+            facebook: "886997161494916", // Facebook page ID
+            whatsapp: "+52 1 55 8770 3080", // WhatsApp number
+            email: "ventas@imaginarte3d.com.mx", // Email
+            sms: "5537356447", // Sms phone number
+            call: "5537356447", // Call phone number
+            company_logo_url: "", // URL of company logo (png, jpg, gif)
+            greeting_message: "", // Text of greeting message
+            call_to_action: "Cotiza ahora", // Call to action
+            wa_vb_message: "", // Message for WhatsApp
+            button_color: "#4f1aa6", // Color of button
+            position: "left", // Position may be 'right' or 'left'
+            order: "facebook,whatsapp,email,sms,call" // Order of buttons
+        };
+        var proto = document.location.protocol, host = "whatshelp.io", url = proto + "//static." + host;
+        var s = document.createElement('script'); s.type = 'text/javascript'; s.async = true; s.src = url + '/widget-send-button/js/init.js';
+        s.onload = function () { WhWidgetSendButton.init(host, proto, options); };
+        var x = document.getElementsByTagName('script')[0]; x.parentNode.insertBefore(s, x);
+    })();
+</script>
+
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
 
 
@@ -94,7 +118,7 @@ include("plug-analitcs.php");
 
 </head>
 
-	<div itemscope itemtype="http://schema.org/Article">
+<div itemscope itemtype="http://schema.org/Article">
 
 <nav class="navbar" role="navigation">
   <div class="container-fluid">
@@ -106,7 +130,9 @@ include("plug-analitcs.php");
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand white" href="">imaginarte 3D</a>
+      <a class="navbar-brand white" href="">
+        <img class="" src="images/LOGO/new-log.png" alt=""style="padding: 0px 0px 0px 30px;position: relative;top: -15px">
+      </a>
     </div>
 
     <!-- Collect the nav links, forms, and other content for toggling -->
@@ -141,6 +167,7 @@ include("plug-analitcs.php");
         </li>
         <li><a  class="leters-nav" href="#gallery">Nuestros trabajos</a></li>
         <li><a  class="leters-nav" href="#contact">Contacto</a></li>
+        <li><a  class="leters-nav" data-toggle="modal" data-target=".bs-example-modal-lg" href="#contact">Inisiar Sesion</a></li>
 
       </ul>
     </div><!-- /.navbar-collapse -->
@@ -148,6 +175,22 @@ include("plug-analitcs.php");
 </nav>
 
 </div>
+
+
+
+<div class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <?php 
+
+      include("views/login.view.php");
+
+       ?>
+    </div>
+  </div>
+</div>
+
+
 
   	<script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
 	<script src='http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js'></script>

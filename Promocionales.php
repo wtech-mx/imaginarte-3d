@@ -4,15 +4,51 @@
 
 
 <body >
-<!-- banner -->
-<div id="slider">
-    <figure>
-      <img src="Portafolio/Promocionales/s1.png">
-      <img src="Portafolio/Promocionales/19.jpeg">
-      <img src="Portafolio/Promocionales/8.jpg">
-    </figure>
+
+
+
+<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+  <!-- Indicators -->
+  <ol class="carousel-indicators">
+    <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+    <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+    <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+  </ol>
+
+  <!-- Wrapper for slides -->
+  <div class="carousel-inner">
+    <div class="item active">
+      <img src="Portafolio/Promocionales/s1.png" alt="...">
+      <div class="carousel-caption">
+        ...
+      </div>
+    </div>
+    <div class="item">
+      <img src="Portafolio/Promocionales/19.jpeg" alt="...">
+      <div class="carousel-caption">
+        ...
+      </div>
+    </div>
+
+     <div class="item">
+      <img src="Portafolio/Promocionales/8.jpg" alt="...">
+      <div class="carousel-caption">
+        ...
+      </div>
+    </div>
+
+    </div>
+    ...
   </div>
-<!-- //banner -->
+
+  <!-- Controls -->
+  <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+    <span class="glyphicon glyphicon-chevron-left"></span>
+  </a>
+  <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+    <span class="glyphicon glyphicon-chevron-right"></span>
+  </a>
+</div>
 
 
 			<!-- Start callto Area -->
@@ -104,25 +140,21 @@ Anúnciate en diferentes medios y llega a más personas con diferentes productos
 				</div>
 			</section>
 
-			<!-- Start blog Area -->
-			<section class="blog-area section-gap" id="blog">
-				<div class="container">
-					<div class="row justify-content-center">
-						<div class="col-md-8 pb-30 header-text">
-							<h1>Mas Categorias</h1>
-							<p>
-								
 
-							</p>
-						</div>
-					</div>
 <?php 
 include("container-services.php");
  ?>
-				</div>	
-			</section>
-			<!-- end blog Area -->	
 
+        <section class="callto pt-50 pb-50 fluid "style="background: #fff">
+        <div class="container text-center">
+          <div class="row text-center">
+             <div class="col-lg-9 callto-left" style="left: 15%;">
+              <p class="">Nuestro Objetivo es facilitar el proceso brindandote diferentes opciones que pueden acomodarse a tu presupuesto , entregas e instalaciones</p>
+             </div>
+          </div>
+           <a href="https://wa.me/5215587703080?text=Hola%20vi%20su%20pagina%20web,%20quisiera%20mas%20información %20de%20sus%20servicios" class="btn btn-lg btn-primary" target="blank" style="border-radius: 30px;background-image: linear-gradient(to right, #7e59db, #6f4bcb, #5f3cbb, #4f2eab, #3f209b); width: 70%;height: 70px">CONTACTANOS</a>
+        </div>  
+      </section>  
 
 
 <?php 
