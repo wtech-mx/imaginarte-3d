@@ -1,4 +1,4 @@
-<link rel="stylesheet" type="text/css" href="../bootstrap/css/bootstrap.min.css">
+<link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css">
 
 <div class="container">
 	<div class="row">

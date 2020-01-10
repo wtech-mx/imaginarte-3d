@@ -1,11 +1,11 @@
 <?php
 
-define('RUTA', 'http://localhost/imaginarte-3d/');
+define('RUTA', 'http://localhost/imaginarte-3d');
 //define('RUTA', 'https://eago.com.mx/blog/');
 
 //DB TRABJANDO EN LOCALHOST
 $bd_config = array(
-	'basedatos' => 'slide-blog',
+	'basedatos' => 'imaginarte',
 	'usuario' => 'root',
 	'pass' => ''
 );

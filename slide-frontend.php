@@ -7,7 +7,7 @@ include "admin/db.php";
 <html>
 <head>
   <title>Carouseles</title>
-  <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
 </head>
 <body>
 <nav class="navbar navbar-inverse">
@@ -71,8 +71,8 @@ include "admin/db.php";
 </div>
 </div>
 </div>
-<script src="jquery.min.js"></script>
-<script src="bootstrap/js/bootstrap.min.js"></script>
+<script src="js/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
 
 </body>
 </html>

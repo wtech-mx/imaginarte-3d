@@ -1,5 +1,5 @@
+<?php require 'header.php' ?>
 
-<link rel="stylesheet" type="text/css" href="css/estilos.css">
 	<div class="contenedor">
 		<div class="post">
 			<article>

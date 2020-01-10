@@ -12,7 +12,7 @@
 		<article>
 			<h2 class="titulo"><?php echo $post['id'] . '.- ' . $post['titulo']; ?></h2>
 			<a type="button" class="btn btn-warning" href="editar.php?id=<?php echo $post['id']; ?>">Editar</a>
-			<a type="button" class="btn btn-primary" target="blank" href="../../Eago-frontend/blog/single.php?id=<?php echo $post['id']; ?>">Ver</a>
+			<a type="button" class="btn btn-primary" target="blank" href="../single.php?id=<?php echo $post['id']; ?>">Ver</a>
 			<a type="button" class="btn btn-danger" href="borrar.php?id=<?php echo $post['id']; ?>">Borrar</a>
 
 
@@ -26,6 +26,3 @@
 <?php 
 	include("slide.php");
  ?>
-
-
-

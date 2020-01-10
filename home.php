@@ -167,7 +167,7 @@ include("plug-analitcs.php");
         </li>
         <li><a  class="leters-nav" href="#gallery">Nuestros trabajos</a></li>
         <li><a  class="leters-nav" href="#contact">Contacto</a></li>
-        <li><a  class="leters-nav" data-toggle="modal" data-target=".bs-example-modal-lg" href="#contact">Inisiar Sesion</a></li>
+        <li><a  class="leters-nav" href="login.php">Iniciar Sesión</a></li>
 
       </ul>
     </div><!-- /.navbar-collapse -->

@@ -1,8 +1,12 @@
 <?php
 
+/**
+* Conexion a la base de datos y funciones
+* Autor: evilnapsis
+**/
 
 function con(){
-	return new mysqli("localhost","root","","slide-blog");
+	return new mysqli("localhost","root","","imaginarte");
 }
 
 function insert_img($title, $folder, $image){

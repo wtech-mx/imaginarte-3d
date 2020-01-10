@@ -1,4 +1,4 @@
-<link rel="stylesheet" type="text/css" href="css/estilos.css">
+<?php require 'header.php' ?>
 
 	<div class="contenedor">
 		<?php foreach($posts as $post): ?>
@@ -21,3 +21,4 @@
 
 	</div>
 
+<?php require 'footer.php'; ?>
