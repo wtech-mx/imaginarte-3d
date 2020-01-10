@@ -1,35 +1,8 @@
 <?php
-include "admin/db.php";
+
  $images = get_imgs();
 ?>
-<!-- Powered by Evilnapsis http://evilnapsis.com/ -->
-<!DOCTYPE html>
-<html>
-<head>
-  <title>Carouseles</title>
-  <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
-</head>
-<body>
-<nav class="navbar navbar-inverse">
-  <div class="container">
-    <!-- Brand and toggle get grouped for better mobile display -->
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-        <span class="sr-only">Toggle navigation</span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-      <a class="navbar-brand" href="./">Carousel</a>
-    </div>
-    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-      <ul class="nav navbar-nav">
-        <li><a href="./">Inicio</a></li>
-        <li><a href="./admin" target="_blank">Administar</a></li>
-      </ul>
-    </div><!-- /.navbar-collapse -->
-  </div><!-- /.container-fluid -->
-</nav>
+
 
 <div class="container">
 <div class="row">
@@ -71,8 +44,3 @@ include "admin/db.php";
 </div>
 </div>
 </div>
-<script src="js/jquery.min.js"></script>
-<script src="js/bootstrap.min.js"></script>
-
-</body>
-</html>

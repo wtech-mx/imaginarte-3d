@@ -1,9 +1,5 @@
 <?php
 
-/**
-* Conexion a la base de datos y funciones
-* Autor: evilnapsis
-**/
 
 function con(){
 	return new mysqli("localhost","root","","imaginarte");
