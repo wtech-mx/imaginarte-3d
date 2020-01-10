@@ -165,9 +165,15 @@ include("plug-analitcs.php");
           </ul>
 
         </li>
-        <li><a  class="leters-nav" href="#gallery">Nuestros trabajos</a></li>
+<!--        <li><a  class="leters-nav" href="#gallery">Nuestros trabajos</a></li>-->
         <li><a  class="leters-nav" href="#contact">Contacto</a></li>
-        <li><a  class="leters-nav" href="login.php">Iniciar Sesión</a></li>
+        <li><a  class="leters-nav" href="login.php" target="blank">Iniciar Sesión</a></li>
+<!--        <li>
+          <a class="leters-nav" data-toggle="modal" data-target=".bs-example-modal-lg">
+            Iniciar Sesión
+          </a>
+        </li>-->
+
 
       </ul>
     </div><!-- /.navbar-collapse -->
@@ -178,13 +184,12 @@ include("plug-analitcs.php");
 
 
 
+
 <div class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
   <div class="modal-dialog modal-lg">
     <div class="modal-content">
       <?php 
-
       include("views/login.view.php");
-
        ?>
     </div>
   </div>

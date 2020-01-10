@@ -1,6 +1,6 @@
 <?php
 
-define('RUTA', 'http://localhost/imaginarte-3d');
+define('RUTA', 'http://localhost/imaginarte-3d/');
 //define('RUTA', 'https://eago.com.mx/blog/');
 
 //DB TRABJANDO EN LOCALHOST
@@ -19,7 +19,7 @@ $bd_config = array(
 //);
 
 $blog_config = array(
-	'post_por_pagina'=> '4',
+	'post_por_pagina'=> '3',
 	'carpeta_imagenes' => 'imagenes/'
 );
 
