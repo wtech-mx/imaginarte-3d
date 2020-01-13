@@ -1,13 +1,10 @@
 <div class="footer footer_w3layouts_section_1its" style="background: #7f5adc">
-	<div class="barra" style="background-color: #00ffa0;padding: 30px;width: auto;position: relative;top: -60px"></div>
+	<div class="barra2" style="background-color: #00ffa0;padding: 30px;width: auto;position: relative;top: -60px"></div>
 	<div class="container">
 
-		<div class="footer-top">
-
+	<div class="footer-top">
 		<div class="row">
-				
 			<div class="col-md-3 footer-grid_section_1its_w3">
-			   
 				<div class="footer-title">
 					<h3>Contacto</h3>
 				</div>

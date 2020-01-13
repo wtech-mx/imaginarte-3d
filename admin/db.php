@@ -3,6 +3,7 @@
 
 function con(){
 	return new mysqli("localhost","root","","imaginarte");
+	//return new mysqli("localhost","user-imaginarte","Imaginarte3d","imaginarte-3d");
 }
 
 function insert_img($title, $folder, $image){

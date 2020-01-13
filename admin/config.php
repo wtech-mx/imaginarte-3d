@@ -1,6 +1,6 @@
 <?php
 
-define('RUTA', 'http://localhost/imaginarte-3d/');
+define('RUTA', 'http://www.imaginarte3d.com.mx/');
 //define('RUTA', 'https://eago.com.mx/blog/');
 
 //DB TRABJANDO EN LOCALHOST
@@ -12,10 +12,11 @@ $bd_config = array(
 
 //DB TRABJANDO EN EL SERVIDOR
 //
-//$bd_config = array(
-	//'basedatos' => 'blog-eago',
-	//'usuario' => 'user-blog',
-	//'pass' => 'Blog123.'
+
+//$bd_//config = array(
+	//'basedatos' => 'imaginarte-3d',
+	//'usuario' => 'user-imaginarte',
+	//'pass' => 'Imaginarte3d'
 //);
 
 $blog_config = array(
@@ -24,8 +25,8 @@ $blog_config = array(
 );
 
 $blog_admin = array(
-	'usuario' => 'Carlos',
-	'password' => '123'
+	'usuario' => 'Imaginarte',
+	'password' => 'Maritzel'
 );
 
 ?>

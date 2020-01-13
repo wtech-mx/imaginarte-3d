@@ -234,12 +234,12 @@ footer .copyright {
 }
 
 .paginacion ul li a:hover {
-	background: #051240;
+	background: #00ffa0;
 	text-decoration: none;
 }
 
 .paginacion ul .active {
-	background: #051240;
+	background: #00ffa0;
 	padding:10px 20px;
 }
 

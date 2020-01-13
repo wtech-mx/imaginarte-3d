@@ -2019,7 +2019,7 @@ img {vertical-align: middle;
 }
 
 .active, .dot:hover {
-  background-color: #717171;
+  color: #00ffa0;
 }
 
 /* Fading animation */
@@ -2246,6 +2246,12 @@ nav{
   color: #fff;
 }
 
+
+
+.leters-nav a:hover{
+  color: #00ffa0;
+}
+
 .navbar-default .navbar-brand {
     font-family: "Kaushan Script","Helvetica Neue",Helvetica,Arial,cursive;
     color: #fff;
@@ -2288,7 +2294,7 @@ nav{
 
 .navbar .nav li a:hover,
 .navbar .nav li a:focus{
-  background-color: #4A275E;
+  background-color: #5E30B6;
 }
 
 ul .dropdown-menu {
@@ -2310,19 +2316,17 @@ ul .dropdown-menu li:hover {
 .navbar .nav li a:hover,
 .navbar .nav li a:focus {
     outline: 0;
-    color: #fff;
+    color: #00ffa0;
 }
 
-.navbar .navbar-nav>.active>a {
+/*.navbar .navbar-nav>.active>a {
     border-radius: 0;
     color: #fff;
-    background-color: #0ca2cf;
-}
+}*/
 
 .navbar .navbar-nav>.active>a:hover,
 .navbar .navbar-nav>.active>a:focus {
-    color: #fff;
-    background-color: #0ca2cf;
+    color: #00ffa0;
 }
 
 @media(min-width:768px) {

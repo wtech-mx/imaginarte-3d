@@ -112,7 +112,7 @@ include("plug-analitcs.php");
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand white" href="index.php">
+      <a class="navbar-brand white" href="">
         <img class="" src="images/LOGO/new-log.png" alt=""style="padding: 0px 0px 0px 30px;position: relative;top: -15px">
       </a>
     </div>
@@ -130,25 +130,32 @@ include("plug-analitcs.php");
       </form>-->
       <ul class="nav navbar-nav navbar-right">
 
-        <li class="active"><a class="leters-nav" href="index.php">Inicio</a></li>
-        <li><a class="leters-nav" href="#about">¿Quines somos?</a></li>
+        <li class="active"><a class="leters-nav" href="index.php"><strong>Inicio</strong></a></li>
+        <li><a class="leters-nav" href="#about"><strong>Nosotros</strong></a></li>
             <li class="dropdown">
-          <a class="leters-nav" href="#" class="dropdown-toggle" data-toggle="dropdown">Productos <span class="caret"></span></a>
+          <a class="leters-nav" href="#" class="dropdown-toggle" data-toggle="dropdown"><strong>Productos</strong> <span class="caret"></span></a>
 
           <ul class="dropdown-menu" role="menu">
-            <li><a class="leters-nav"href="Letras-3D-Corporeas.php">Letras 3D Corporeas</a></li>
-            <li><a href="Anuncios-Luminosos.php">Anuncios Luminosos</a></li>
-            <li><a href="Señaletica.php">Señaletica</a></li>
-            <li><a href="Impresion-Digital.php">Impresion Digital</a></li>
-            <li><a href="Promocionales.php">Promocionales</a></li>
-            <li><a href="Serigrafia-y-vinil-textil.php">Artes Graficas</a></li>
-            <li><a href="Tableros-decorativos-en-acrílico.php">Tableros y letreros de acrilico</a></li>
-            <li><a href="Señaletica-Protecciion-civil.php">Recorte de Vinil</a></li>
+            <li><a class="leters-nav"href="Letras-3D-Corporeas.php"><strong>Letras 3D Corporeas</strong></a></li>
+            <li><a href="Anuncios-Luminosos.php"><strong>Anuncios Luminosos</strong></a></li>
+            <li><a href="Señaletica.php"><strong>Señaletica</strong></a></li>
+            <li><a href="Impresion-Digital.php"><strong>Impresion Digital</strong></a></li>
+            <li><a href="Promocionales.php"><strong>Promocionales</strong></a></li>
+            <li><a href="Serigrafia-y-vinil-textil.php"><strong>Artes Graficas</strong></a></li>
+            <li><a href="Tableros-decorativos-en-acrílico.php"><strong>Tableros y letreros de acrilico</strong></a></li>
+            <li><a href="Señaletica-Protecciion-civil.php"><strong>Recorte de Vinil</strong></a></li>
           </ul>
 
         </li>
-        <li><a  class="leters-nav" href="#gallery">Nuestros trabajos</a></li>
-        <li><a  class="leters-nav" href="#contact">Contacto</a></li>
+<!--        <li><a  class="leters-nav" href="#gallery">Nuestros trabajos</a></li>-->
+        <li><a  class="leters-nav" href="#contact"><strong>Contacto</strong></a></li>
+        <li><a  class="leters-nav" href="login.php" target="blank"><strong>Iniciar Sesión</strong></a></li>
+<!--        <li>
+          <a class="leters-nav" data-toggle="modal" data-target=".bs-example-modal-lg">
+            Iniciar Sesión
+          </a>
+        </li>-->
+
 
       </ul>
     </div><!-- /.navbar-collapse -->

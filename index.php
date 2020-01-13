@@ -30,20 +30,15 @@
                 </div>
                 <div class="col-md-8 p-5" style="padding: 10px;">
                   <div class="card-body">
-                    <h2 itemprop="author" style="color: #683cc0"><strong>¿Quiénes somos?</strong></h2>
+                    <h2 itemprop="author" style="color: #683cc0"><strong>IMAGINARTE 3D</strong></h2>
                      <div class="barra" style="background-color: #683cc0;padding: 5px;width: 10px;position: absolute;top:70px;height:90px;left: -5px"></div>
-                    <p class="card-text "  itemprop="description" style="color: #000">Somos un gran equipo de especialistas en Publicidad Exterior e Interior, nuestra principal labor es satisfacer las  necesidades de comunicación y difusión de nuestros clientes a través de diferentes técnicas innovadoras.</p>
-                    <h2 itemprop="author" style="color: #00bdb4"><strong>¿Qué hacemos?</strong></h2>
-                    <div class="barra" style="background-color: #00bdb4;padding: 5px;width: 10px;position: absolute;top:200px;height:200px;left: -5px"></div>
+                    <p class="card-text "  itemprop="description" style="color: #000">Somos un equipo de especialistas que promueve <br> soluciones en diseño publicitaario, mediante <br> la elavoracion de productos de alta caliad y de acuerdo a tus necesidades.</p>
+                    <h2 itemprop="author" style="color: #00bdb4"><strong>Misión</strong></h2>
+                    <div class="barra" style="background-color: #00bdb4;padding: 5px;width: 10px;position: absolute;top:200px;height:90px;left: -5px"></div>
                     <p class="card-text "  itemprop="description" style="color: #000">
-                      • Letras 3D o Letras Corpóreas  <br>
-                      • Impresión digital (lona, vinil, papel tapiz, microperforado, tela, etc.) <br>
-                      • Anuncios luminosos <br>
-                      • Señaletica creativa <br>
-                      • Artes graficas <br>
-                      • Tableros decorativos <br>
+                      Ofrecer productos y servicios de calidad, <br> que permitan plasmar las ideas compartidas.
                     </p>
-                    <h2 itemprop="author" style="color: #683cc0"><strong>¿Por qué elegirnos?</strong></h2>
+<!--                    <h2 itemprop="author" style="color: #683cc0"><strong>¿Por qué elegirnos?</strong></h2>
                     <div class="barra" style="background-color: #683cc0;padding: 5px;width: 10px;position: absolute;top:440px;height:260px;left: -5px"></div>
                     <p class="card-text "  itemprop="description" style="color: #000">
                       • Somos Profesionales en Publicidad exterior e interior – diseñamos, fabricamos e instalamos <br>
@@ -54,7 +49,7 @@
                       • Cuidamos cada detalle <br>
                       • Nos respalda grandes proyectos y más de 10 años de servicio <br>
                       • Brindamos diferentes soluciones de publicidad <br>
-                    </p>
+                    </p>-->
                    </div>
                 </div>
               </div>
@@ -76,8 +71,8 @@ include("container-services.php");
         <div class="container">
           <div class="row text-rigth">
              <div class="col-lg-9 callto-left fluid">
-              <h1 class="text-uppercase text-center">IMAGINA - COTIZA - CREA </h1>
-               <div class="barra" style="background-color: #00ffa0;padding: 5px;width: 70%;position: absolute;top:90%;left: 21%">
+              <h1 class="text-uppercase text-rigth ban-imagina">IMAGINA - COTIZA - CREA </h1>
+               <div class="barra" style="">
                </div>
              </div>
           </div>
@@ -85,20 +80,53 @@ include("container-services.php");
         </div>  
       </section>
 
-        <section class="callto pt-50 pb-50 fluid "style="background: #fff">
+      <section class="callto pt-50 pb-50 fluid "style="background: #fff">
         <div class="container text-center">
           <div class="row text-center">
-             <div class="col-lg-9 callto-left" style="left: 15%;">
-              <p class="">Nuestro Objetivo es facilitar el proceso brindandote diferentes opciones que pueden acomodarse a tu presupuesto , entregas e instalaciones</p>
+             <div class="col-lg-9 callto-left text-contet" style="left: 15%;">
+              <p class="" style="color: #000">Nuestro Objetivo es facilitar el proceso brindandote  <br>diferentes opciones que pueden acomodarse a tu presupuesto , entregas e instalaciones</p>
              </div>
           </div>
            <a href="https://wa.me/5215587703080?text=Hola%20vi%20su%20pagina%20web,%20quisiera%20mas%20información %20de%20sus%20servicios" class="btn btn-lg btn-primary" target="blank" style="border-radius: 30px;background-image: linear-gradient(to right, #7e59db, #6f4bcb, #5f3cbb, #4f2eab, #3f209b); width: 70%;height: 70px">CONTACTANOS</a>
         </div>  
       </section>  
 
-  <?php 
+      <style type="text/css" media="screen">
 
-  include("views/index.view.php");
+      .barra{
+      background-color: #00ffa0;
+      padding: 5px;
+      width: 70%;
+      position: absolute;
+      top:90%;
+      left: 35%;
+      }
+
+       @media screen and (max-width: 992px) {
+        .text-center p {
+          color: white;
+          position: relative;
+          left:-100px;
+        }
+        .ban-imagina{
+          position: relative;
+          left: -30%;
+        }
+      }
+
+      @media screen and (max-width: 600px) {
+        .barra{
+        padding: 3px;
+        width: 45%;
+        position: absolute;
+        top:90%;
+        left: 30%;
+        }
+      }     
+      </style>
+
+  <?php 
+   include("views/index.view.php");
 
    ?>
 

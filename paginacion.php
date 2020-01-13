@@ -8,7 +8,7 @@
 		<?php if (pagina_actual() === 1): ?>
 			<li class="disabled">&laquo;</li>
 		<?php else: ?>
-			<li><a href="index.php?p=<?php echo pagina_actual() - 1?>">&laquo;</a></li>
+			<li><a href="index.php?p=<?php echo pagina_actual() - 1?>#blog">&laquo;</a></li>
 		<?php endif; ?>
 
 		<!-- Creamos un elemento li por cada pagina que tengamos -->
@@ -20,7 +20,7 @@
 				</li>
 			<?php else: ?>
 				<li>
-					<a href="index.php?p=<?php echo $i?>"><?php echo $i; ?></a>
+					<a href="index.php?p=<?php echo $i?>#blog"><?php echo $i; ?></a>
 				</li>
 			<?php endif; ?>
 		<?php endfor; ?>
@@ -29,7 +29,7 @@
 		<?php if (pagina_actual() == $numero_paginas): ?>
 			<li class="disabled">&raquo;</li>
 		<?php else: ?>
-			<li><a href="index.php?p=<?php echo pagina_actual() + 1; ?>">&raquo;</a></li>
+			<li><a href="index.php?p=<?php echo pagina_actual() + 1; ?>#blog">&raquo;</a></li>
 		<?php endif; ?>
 	</ul>
 </section>

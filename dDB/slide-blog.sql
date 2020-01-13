@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 08-01-2020 a las 03:21:47
+-- Tiempo de generación: 13-01-2020 a las 04:24:23
 -- Versión del servidor: 10.1.37-MariaDB
 -- Versión de PHP: 7.3.1
 
@@ -19,7 +19,7 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Base de datos: `slide-blog`
+-- Base de datos: `imaginarte`
 --
 
 -- --------------------------------------------------------
@@ -37,6 +37,16 @@ CREATE TABLE `articulos` (
   `thumb` varchar(50) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
+--
+-- Volcado de datos para la tabla `articulos`
+--
+
+INSERT INTO `articulos` (`id`, `titulo`, `extracto`, `fecha`, `texto`, `thumb`) VALUES
+(1, 'Google', 'Google Noticias', '2020-01-11 09:25:12', 'Google Noticias es un agregador y buscador de noticias automatizado que rastrea de forma constante la informacion de los principales medios de comunicacion online.', 'abstract_lanes_5k.jpg'),
+(2, 'Aceite del motor', 'En caso de no realizar un cambio...', '2020-01-10 07:30:57', 'El sitio web de Google News, elaborado por Google, se actualiza cada 15 minutos y fue lanzado en versiÃ³n beta en abril de 2002.', 'colorful_papers_4k.jpg'),
+(4, 'Imaginarte 3d', 'Los amortiguadores tienen una vida Ãºtil de 80.000 kilÃ³metros, lo que equivale a unos tres aÃ±os y medio.', '2020-01-10 07:31:31', 'Los amortiguadores tienen una vida Ãºtil de 80.000 kilÃ³metros, lo que equivale a unos tres aÃ±os y medio.Los amortiguadores tienen una vida Ãºtil de 80.000 kilÃ³metros, lo que equivale a unos tres aÃ±os y medio.Los amortiguadores tienen una vida Ãºtil de 80.000 kilÃ³metros, lo que equivale a unos tres aÃ±os y medio.', 'astronaut_dream_4k.jpg'),
+(5, 'Prueba Imaginarte', 'El filtro de aceite purifica el aceite, su vida Ãºtil es de 5.000 kms.', '2020-01-10 07:37:15', 'Prueba ImaginartePrueba ImaginartePrueba ImaginartePrueba ImaginartePrueba ImaginartePrueba ImaginartePrueba ImaginartePrueba ImaginartePrueba ImaginartePrueba ImaginartePrueba ImaginartePrueba ImaginartePrueba ImaginartePrueba Imaginarte', 'halo_wars_new_game.jpg');
+
 -- --------------------------------------------------------
 
 --
@@ -51,6 +61,14 @@ CREATE TABLE `slide` (
   `src` varchar(250) NOT NULL,
   `created_at` varchar(250) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Volcado de datos para la tabla `slide`
+--
+
+INSERT INTO `slide` (`id`, `title`, `boton`, `folder`, `src`, `created_at`) VALUES
+(1, 'promocion de temporada', '', 'uploads/', 'bicycle-1869176_1280_1.jpg', '2020-01-08 18:37:14'),
+(2, 'Algebra Lineal', '', 'uploads/', 'person-731492_1280.jpg', '2020-01-08 20:23:38');
 
 --
 -- Índices para tablas volcadas
@@ -76,13 +94,13 @@ ALTER TABLE `slide`
 -- AUTO_INCREMENT de la tabla `articulos`
 --
 ALTER TABLE `articulos`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
 
 --
 -- AUTO_INCREMENT de la tabla `slide`
 --
 ALTER TABLE `slide`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
