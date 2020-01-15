@@ -1,6 +1,6 @@
 <?php
 
-define('RUTA', 'http://www.imaginarte3d.com.mx/');
+define('RUTA', 'http://localhost/imaginarte-3d');
 //define('RUTA', 'https://eago.com.mx/blog/');
 
 //DB TRABJANDO EN LOCALHOST

@@ -26,3 +26,23 @@
 <?php 
 	include("slide.php");
  ?>
+
+ <div class="contenedor p-5">
+	<h2>Panel de Galerias</h2>
+		<article>
+			<a href="../adminBanner/bannerlist-corpo.php" class="btn btn-lg btn-primary" target="blank" style="border-radius: 30px;background-image: linear-gradient(to right, #7e59db, #6f4bcb, #5f3cbb, #4f2eab, #3f209b); width: 30%;height: 50px">Letras Corporeas</a>
+
+			<a href="../adminBanner/bannerlist-dig.php" class="btn btn-lg btn-primary" target="blank" style="border-radius: 30px;background-image: linear-gradient(to right, #7e59db, #6f4bcb, #5f3cbb, #4f2eab, #3f209b); width: 30%;height: 50px">Impresion Digital</a>
+
+			<a href="../adminBanner/bannerlist-lumi.php" class="btn btn-lg btn-primary" target="blank" style="border-radius: 30px;background-image: linear-gradient(to right, #7e59db, #6f4bcb, #5f3cbb, #4f2eab, #3f209b); width: 30%;height: 50px">Anuncios Luminosos</a>
+
+			<a href="../adminBanner/bannerlist-seña.php" class="btn btn-lg btn-primary" target="blank" style="border-radius: 30px;background-image: linear-gradient(to right, #7e59db, #6f4bcb, #5f3cbb, #4f2eab, #3f209b); width: 30%;height: 50px">Señaletica</a>
+
+			<a href="../adminBanner/bannerlist-promo.php" class="btn btn-lg btn-primary" target="blank" style="border-radius: 30px;background-image: linear-gradient(to right, #7e59db, #6f4bcb, #5f3cbb, #4f2eab, #3f209b); width: 30%;height: 50px">Promocionales</a>
+
+			<a href="../adminBanner/bannerlist-art.php" class="btn btn-lg btn-primary" target="blank" style="border-radius: 30px;background-image: linear-gradient(to right, #7e59db, #6f4bcb, #5f3cbb, #4f2eab, #3f209b); width: 30%;height: 50px">Artes Graficas</a>
+
+			<a href="../adminBanner/bannerlist-tab.php" class="btn btn-lg btn-primary" target="blank" style="border-radius: 30px;background-image: linear-gradient(to right, #7e59db, #6f4bcb, #5f3cbb, #4f2eab, #3f209b); width: 30%;height: 60px">Tableros y letreros de acrilico</a>
+
+			<a href="../adminBanner/bannerlist-vin.php" class="btn btn-lg btn-primary" target="blank" style="border-radius: 30px;background-image: linear-gradient(to right, #7e59db, #6f4bcb, #5f3cbb, #4f2eab, #3f209b); width: 30%;height: 50px">Recorte de Vinil</a>
+</div>
