@@ -1,6 +1,6 @@
 
 
-<div class="carousel slide">
+<div class="carousel slide" style="position: relative;top: -20px">
   <div class="row flui">
     <div class="col-md-12">
     <?php if(count($images)>0):?>

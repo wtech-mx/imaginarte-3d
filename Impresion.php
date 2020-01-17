@@ -48,7 +48,7 @@
         <section class="services py-lg-5 py-md-4 py-3" id="services">
           <div class="container  py-sm-5 py-4 ">
                 <div class="title-heading text-center mb-sm-5 mb-4"style="border-radius: 10px;">
-                  <h3 class="text-left" itemprop="Service" style="color: #4f1aa6;padding: 50PX;position: relative;left: -50px;">Recorte de vinil</h3>
+                  <h3 class="text-left" itemprop="Service" style="color: #4f1aa6;padding: 50PX;position: relative;left: -50px;">Impresión Digital</h3>
                     <h4 itemprop="Service"></h4>
                     <div class="barra" style="background-color: #fff;padding: 5px;width: 200px;position: absolute;top:100px">
                     </div>
@@ -57,7 +57,7 @@
         </section>
 
           <div class="col-md-3 text-center">
-          <a href="./Señaletica-Protecciion-civil.php">
+          <a href="Impresion-Digital.php">
             <div class="containera">
           <img class="card-serv" src="Portafolio/Portada-services/1.jpg" alt="Letras-3D-Corporeas" class="imagea ">
             <h3 itemprop="services" style="color:#000;"><strong>Letras 3D Corporeas</strong></h3>
@@ -71,7 +71,7 @@
           </div>
 
           <div class="col-md-3  text-center">
-          <a href="./Señaletica-Protecciion-civil.php">
+          <a href="Impresion-Digital.php">
             <div class="containera">
           <img class="card-serv" src="Portafolio/Portada-services/2.jpg" alt="Letras-3D-Corporeas" class="imagea ">
             <h3 itemprop="services" style="color:#000;"><strong>Anuncios Luminosos</strong></h3>
@@ -85,7 +85,7 @@
           </div>
 
           <div class="col-md-3  text-center">
-           <a href="./Señaletica-Protecciion-civil.php" style="color:#000;">
+           <a href="Impresion-Digital.php" style="color:#000;">
             <div class="containera">
             <img class="card-serv" src="Portafolio/Portada-services/3.jpg" alt="Señaletica de interiores" class="imagea">
             <h3 itemprop="Services"style="color:#000;"><strong>Señaletica</strong></h3>
@@ -104,7 +104,7 @@
         <section class="services py-lg-5 py-md-4 py-3" id="services">
           <div class="container  py-sm-5 py-4 ">
                 <div class="title-heading text-center mb-sm-5 mb-4"style="border-radius: 10px;">
-                  <h3 class="text-left" itemprop="Service" style="color: #4f1aa6;padding: 50PX;position: relative;left: -50px;color: #fff">Recorte de vinil</h3>
+                  <h3 class="text-left" itemprop="Service" style="color: #4f1aa6;padding: 50PX;position: relative;left: -50px;color: #fff">Impresión Digital</h3>
                     <h4 itemprop="Service"></h4>
                     <div class="barra" style="background-color: #fff;padding: 5px;width: 200px;position: absolute;top:100px">
                     </div>
@@ -113,7 +113,7 @@
         </section>
 
           <div class="col-md-3 text-center">
-          <a href="./Señaletica-Protecciion-civil.php">
+          <a href="Impresion-Digital.php">
             <div class="containera">
           <img class="card-serv" src="Portafolio/Portada-services/1.jpg" alt="Letras-3D-Corporeas" class="imagea ">
             <h3 itemprop="services" style="color:#000;"><strong>Letras 3D Corporeas</strong></h3>
@@ -127,7 +127,7 @@
           </div>
 
           <div class="col-md-3  text-center">
-          <a href="./Señaletica-Protecciion-civil.php">
+          <a href="Impresion-Digital.php">
             <div class="containera">
           <img class="card-serv" src="Portafolio/Portada-services/2.jpg" alt="Letras-3D-Corporeas" class="imagea ">
             <h3 itemprop="services" style="color:#000;"><strong>Anuncios Luminosos</strong></h3>
@@ -141,7 +141,7 @@
           </div>
 
           <div class="col-md-3  text-center">
-           <a href="./Señaletica-Protecciion-civil.php" style="color:#000;">
+           <a href="Impresion-Digital.php" style="color:#000;">
             <div class="containera">
             <img class="card-serv" src="Portafolio/Portada-services/3.jpg" alt="Señaletica de interiores" class="imagea">
             <h3 itemprop="Services"style="color:#000;"><strong>Señaletica</strong></h3>
@@ -160,7 +160,7 @@
         <section class="services py-lg-5 py-md-4 py-3" id="services">
           <div class="container  py-sm-5 py-4 ">
                 <div class="title-heading text-center mb-sm-5 mb-4"style="border-radius: 10px;">
-                  <h3 class="text-left" itemprop="Service" style="color: #4f1aa6;padding: 50PX;position: relative;left: -50px;">Recorte de vinil</h3>
+                  <h3 class="text-left" itemprop="Service" style="color: #4f1aa6;padding: 50PX;position: relative;left: -50px;">Impresión Digital</h3>
                     <h4 itemprop="Service"></h4>
                     <div class="barra" style="background-color: #fff;padding: 5px;width: 200px;position: absolute;top:100px">
                     </div>
@@ -169,7 +169,7 @@
         </section>
 
           <div class="col-md-3 text-center">
-          <a href="./Señaletica-Protecciion-civil.php">
+          <a href="Impresion-Digital.php">
             <div class="containera">
           <img class="card-serv" src="Portafolio/Portada-services/1.jpg" alt="Letras-3D-Corporeas" class="imagea ">
             <h3 itemprop="services" style="color:#000;"><strong>Letras 3D Corporeas</strong></h3>
@@ -183,7 +183,7 @@
           </div>
 
           <div class="col-md-3  text-center">
-          <a href="./Señaletica-Protecciion-civil.php">
+          <a href="Impresion-Digital.php">
             <div class="containera">
           <img class="card-serv" src="Portafolio/Portada-services/2.jpg" alt="Letras-3D-Corporeas" class="imagea ">
             <h3 itemprop="services" style="color:#000;"><strong>Anuncios Luminosos</strong></h3>
@@ -197,7 +197,7 @@
           </div>
 
           <div class="col-md-3  text-center">
-           <a href="./Señaletica-Protecciion-civil.php" style="color:#000;">
+           <a href="Impresion-Digital.php" style="color:#000;">
             <div class="containera">
             <img class="card-serv" src="Portafolio/Portada-services/3.jpg" alt="Señaletica de interiores" class="imagea">
             <h3 itemprop="Services"style="color:#000;"><strong>Señaletica</strong></h3>
@@ -215,7 +215,7 @@
         <div class="container">
           <div class="row">
              <div class="col-lg-9 callto-left">
-              <h1 class="text-uppercase">Señalética Protección</h1>
+              <h1 class="text-uppercase"> calidad al imprimir</h1>
              </div>
           </div>
         </div>  
@@ -226,15 +226,15 @@
         <div class="container">
           <div class="row d-flex align-items-center">
             <div class="col-lg-6 about-left">
-                <div class="comparison-slider-wrapper">
+                          <div class="comparison-slider-wrapper">
               <!-- Comparison Slider - this div contain the slider with the individual images captions -->
               <div class="comparison-slider">
                 <div class="overlay"> <strong></strong> </div>
-               <img src="images/Antes y Despues/SP/a1.jpg" alt="">
+               <img src="images/Antes y Despues/Impresion digital/a1.jpg" alt="marioPhoto 2">
                <!-- Div containing the image layed out on top from the left -->
                <div class="resize">
                  <div class="overlay"><strong></strong> </div>
-                <img src="images/Antes y Despues/SP/d1.jpg">
+                <img src="images/Antes y Despues/Impresion digital/d1.jpeg">
                </div>
                <!-- Divider where user will interact with the slider -->
                <div class="divider"></div>
@@ -244,12 +244,11 @@
             </div>
             <div class="col-lg-6 about-right">
               <h1>
-                Recorte de vinil
+                Calidad<br>
+                Diseño
               </h1>
               <p>
-                muchas opciones en diferentes aplicaciones <br>
-                Disponible para decorar , anunciar o identificar en cristal, muro, autos,ropa, etc. 
-
+                Nos enfocamos en la calidad al imprimir y darle a tu anuncio la mejor resolución.
               </p>
 
             </div>
@@ -257,6 +256,9 @@
         </div>  
       </section>
       <!-- End About Area -->
+
+
+
 
 
 <?php 

@@ -23,6 +23,7 @@ $active_banner="active";
     <link href="css/navbar-fixed-top.css" rel="stylesheet">
   </head>
   <body>
+
 	<?php include("top_menu.php");?>
 	
     <div class="container">
@@ -34,11 +35,15 @@ $active_banner="active";
 		  <li><a href="../admin/index.php">Inicio</a></li>
 		  <li class="active">Galeria</li>
 		</ol>
+
 			<div class="row">
 			  <div class="col-xs-12 text-right">
-				  <a href='banneradd-corpo.php' class="btn btn-default" ><span class="glyphicon glyphicon-plus"></span> Agregar Imagen</a>
+
+				  <a href='banneradd-corpo.php' class="btn btn-default" >
+				  	<span class="glyphicon glyphicon-plus"></span> Agregar Imagen
+				  </a>
+				  
 			  </div>
-			  
 			</div>
 		  
 		  <br>
@@ -48,6 +53,7 @@ $active_banner="active";
 	  </div>
 
     </div> <!-- /container -->
+
 	<?php include("footer.php");?>
     <!-- Bootstrap core JavaScript
     ================================================== -->

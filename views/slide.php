@@ -58,8 +58,8 @@ $images = get_imgs();
 				<td><img src="<?php echo $img->folder.$img->src; ?>" style="width:240px;"></td>
 				<td><?php echo $img->title; ?></td>
 				<td>
-					<a class="btn btn-success" href="../admin/download.php?id=<?php echo $img->id; ?>">Descarga</a>
-					<a class="btn btn-danger" href="../admin/delete.php?id=<?php echo $img->id; ?>">Eliminar</a>
+					<a class="btn btn-sm btn-success" href="../admin/download.php?id=<?php echo $img->id; ?>">Descarga</a>
+					<a class="btn btn-sm btn-danger" href="../admin/delete.php?id=<?php echo $img->id; ?>">Eliminar</a>
 
 				</td>
 				</tr>

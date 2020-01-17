@@ -163,8 +163,23 @@ include("plug-analitcs.php");
 
         <li class="active"><a class="leters-nav" href="index.php"><strong>Inicio</strong></a></li>
         <li><a class="leters-nav" href="#about"><strong>Nosotros</strong></a></li>
-      	    <li class="dropdown">
-          <li><a class="leters-nav" href="productos.php"><strong>Productos</strong></a></li>
+      	<li class="dropdown">
+          <!--<li><a class="leters-nav" href="productos.php"><strong>Productos</strong></a></li>-->
+        <li class="dropdown">
+          <a class="leters-nav" href="#" class="dropdown-toggle" data-toggle="dropdown"><strong>Productos</strong> <span class="caret"></span></a>
+
+          <ul class="dropdown-menu" role="menu">
+            <li><a class="leters-nav"href="Letras-3D.php"><strong>Letras 3D Corporeas</strong></a></li>
+            <li><a href="Anuncios.php"><strong>Anuncios Luminosos</strong></a></li>
+            <li><a href="Seña.php"><strong>Señaletica</strong></a></li>
+            <li><a href="Impresion.php"><strong>Impresion Digital</strong></a></li>
+            <li><a href="Promo.php"><strong>Promocionales</strong></a></li>
+            <li><a href="Serigrafia.php"><strong>Artes Graficas</strong></a></li>
+            <li><a href="Tableros.php"><strong>Tableros y letreros de acrilico</strong></a></li>
+            <li><a href="Señaletica.php"><strong>Recorte de Vinil</strong></a></li>
+          </ul>
+
+        </li>
 <!--        <li><a  class="leters-nav" href="#gallery">Nuestros trabajos</a></li>-->
         <li><a  class="leters-nav" href="#contact"><strong>Contacto</strong></a></li>
         <li><a  class="leters-nav" href="login.php" target="blank"><strong>Iniciar Sesión</strong></a></li>

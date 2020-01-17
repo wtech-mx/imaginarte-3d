@@ -36,7 +36,7 @@ $active_banner="active";
 		</ol>
 			<div class="row">
 			  <div class="col-xs-12 text-right">
-				  <a href='banneradd-sena.php' class="btn btn-default" ><span class="glyphicon glyphicon-plus"></span> Agregar Imagen</a>
+				  <a href='banneradd-seña.php' class="btn btn-default" ><span class="glyphicon glyphicon-plus"></span> Agregar Imagen</a>
 			  </div>
 			  
 			</div>

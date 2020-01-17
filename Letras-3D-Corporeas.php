@@ -9,6 +9,7 @@ include("conexion.php");
   	<div class='container'>
 		<div class="row">
 			<div class="col-lg-12">
+                <a  class="btn btn-warning btn-lg" type="" style="background: #5F31B8" href="index.php">Regresar</a>
 				<h1 class="page-header">Letras 3D Corporeas</h1>
 			<?php
 				$nums=1;
