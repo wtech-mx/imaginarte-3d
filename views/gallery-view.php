@@ -27,7 +27,8 @@
 
 				<tr>
 				<td>
-					<a href="#" class="btn btn-sm btn-primary" target="blank"><?php echo $mostrar['productos'] ?></a>
+					
+					<h5><?php echo $mostrar['productos'] ?></h5>
 				</td>
 				
 				<td>

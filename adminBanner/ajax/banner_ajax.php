@@ -1,5 +1,6 @@
 <?php
 session_start();
+$title="Letras 3D Corporeas";
 /* Llamar la Cadena de Conexion*/ 
 include ("../../conexion.php");
 $action = (isset($_REQUEST['action'])&& $_REQUEST['action'] !=NULL)?$_REQUEST['action']:'';
@@ -63,6 +64,8 @@ if($action == 'ajax'){
 		?>
 		
 		 <div class="row">
+		 	<h1><?php echo $title;?></h1>
+		 	<h3>LETRAS DE ALUMINIO</h3>
 			<?php
 				while($row = mysqli_fetch_array($query)){
 					$url_image=$row['url_image'];
