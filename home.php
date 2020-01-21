@@ -170,13 +170,14 @@ include("plug-analitcs.php");
 
           <ul class="dropdown-menu" role="menu">
             <li><a class="leters-nav"href="Letras-3D.php"><strong>Letras 3D Corporeas</strong></a></li>
-            <li><a href="Anuncios.php"><strong>Anuncios Luminosos</strong></a></li>
-            <li><a href="Seña.php"><strong>Señaletica</strong></a></li>
             <li><a href="Impresion.php"><strong>Impresion Digital</strong></a></li>
+            <li><a href="Señaletica.php"><strong>Neon</strong></a></li>
+
+            <li><a href="Anuncios.php"><strong>Anuncios Luminosos</strong></a></li>
             <li><a href="Promo.php"><strong>Promocionales</strong></a></li>
-            <li><a href="Serigrafia.php"><strong>Artes Graficas</strong></a></li>
-            <li><a href="Tableros.php"><strong>Tableros y letreros de acrilico</strong></a></li>
-            <li><a href="Señaletica.php"><strong>Recorte de Vinil</strong></a></li>
+            <li><a href="Seña.php"><strong>Recorte de Vinil</strong></a></li>
+
+
           </ul>
 
         </li>

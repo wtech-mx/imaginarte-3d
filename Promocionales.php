@@ -9,6 +9,7 @@ include("conexion.php");
   	<div class='container'>
 		<div class="row">
 			<div class="col-lg-12">
+                 <a  class="btn btn-warning btn-lg" type="" style="background: #5F31B8" href="index.php">Regresar</a>
 				<h1 class="page-header">Pomocionales</h1>
 			<?php
 				$nums=1;
@@ -18,7 +19,7 @@ include("conexion.php");
 					
 					<div class="col-lg-3 col-md-4 col-xs-6 thumb">
 						<a class="thumbnail" href="#" data-image-id="" data-toggle="modal" data-title="<?php echo $rw_banner_top['titulo'];?>" data-caption="<?php echo $rw_banner_top['descripcion'];	?>" data-image="img/banner/<?php echo $rw_banner_top['url_image'];?>" data-target="#image-gallery">
-							<img class="img-responsive" src="img/banner/<?php echo $rw_banner_top['url_image'];?>" alt="Another alt text">
+							<img class="img-responsive" src="img/banner/<?php echo $rw_banner_top['url_image'];?>" alt="<?php echo $rw_banner_top['titulo'];?>">
 						</a>
 					</div>
 					<?php

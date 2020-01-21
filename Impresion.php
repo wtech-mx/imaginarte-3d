@@ -20,7 +20,7 @@
       <img class="bg" src="BANNER PRINCIPAL/2.JPG" alt="">
     </div>
 
-      <div class="about py-lg-5 py-md-4 py-3" id="about">   
+<!--      <div class="about py-lg-5 py-md-4 py-3" id="about">   
         <div class="container py-sm-5 py-4">      
           <div class="row">
             <div class="card mb-3" >
@@ -39,7 +39,18 @@
             </div>
           </div>
         </div>
-      </div>
+      </div>-->
+
+      <!-- Start callto Area -->
+      <section class="callto pt-50 pb-50">
+        <div class="container">
+          <div class="row">
+             <div class="col-lg-9 callto-left">
+              <h1 class="text-uppercase">Impresion Digital</h1>
+             </div>
+          </div>
+        </div>  
+      </section>
 
 
 <div class="row services-box" style="background-image: url('images/LOGO/background.png');background-repeat:no-repeat;padding: 60px;">
@@ -48,7 +59,7 @@
         <section class="services py-lg-5 py-md-4 py-3" id="services">
           <div class="container  py-sm-5 py-4 ">
                 <div class="title-heading text-center mb-sm-5 mb-4"style="border-radius: 10px;">
-                  <h3 class="text-left" itemprop="Service" style="color: #4f1aa6;padding: 50PX;position: relative;left: -50px;">Impresión Digital</h3>
+                  <h3 class="text-left" itemprop="Service" style="color: #4f1aa6;padding: 50PX;position: relative;left: -50px;">Impresion en Vinil</h3>
                     <h4 itemprop="Service"></h4>
                     <div class="barra" style="background-color: #fff;padding: 5px;width: 200px;position: absolute;top:100px">
                     </div>
@@ -104,7 +115,7 @@
         <section class="services py-lg-5 py-md-4 py-3" id="services">
           <div class="container  py-sm-5 py-4 ">
                 <div class="title-heading text-center mb-sm-5 mb-4"style="border-radius: 10px;">
-                  <h3 class="text-left" itemprop="Service" style="color: #4f1aa6;padding: 50PX;position: relative;left: -50px;color: #fff">Impresión Digital</h3>
+                  <h3 class="text-left" itemprop="Service" style="color: #4f1aa6;padding: 50PX;position: relative;left: -50px;color: #fff">Impresion en Rigidos</h3>
                     <h4 itemprop="Service"></h4>
                     <div class="barra" style="background-color: #fff;padding: 5px;width: 200px;position: absolute;top:100px">
                     </div>
@@ -160,7 +171,7 @@
         <section class="services py-lg-5 py-md-4 py-3" id="services">
           <div class="container  py-sm-5 py-4 ">
                 <div class="title-heading text-center mb-sm-5 mb-4"style="border-radius: 10px;">
-                  <h3 class="text-left" itemprop="Service" style="color: #4f1aa6;padding: 50PX;position: relative;left: -50px;">Impresión Digital</h3>
+                  <h3 class="text-left" itemprop="Service" style="color: #4f1aa6;padding: 50PX;position: relative;left: -50px;">Lona</h3>
                     <h4 itemprop="Service"></h4>
                     <div class="barra" style="background-color: #fff;padding: 5px;width: 200px;position: absolute;top:100px">
                     </div>
@@ -210,16 +221,175 @@
           </div>
 </div>
 
-      <!-- Start callto Area -->
-      <section class="callto pt-50 pb-50">
-        <div class="container">
-          <div class="row">
-             <div class="col-lg-9 callto-left">
-              <h1 class="text-uppercase"> calidad al imprimir</h1>
-             </div>
+<div class="row services-box" style="background-image: url('images/LOGO/background.png');background-repeat:no-repeat;padding: 60px;">
+
+        <!-- services -->
+        <section class="services py-lg-5 py-md-4 py-3" id="services">
+          <div class="container  py-sm-5 py-4 ">
+                <div class="title-heading text-center mb-sm-5 mb-4"style="border-radius: 10px;">
+                  <h3 class="text-left" itemprop="Service" style="color: #4f1aa6;padding: 50PX;position: relative;left: -50px;">Papel Tapiz</h3>
+                    <h4 itemprop="Service"></h4>
+                    <div class="barra" style="background-color: #fff;padding: 5px;width: 200px;position: absolute;top:100px">
+                    </div>
+                  </div>
+           </div>   
+        </section>
+
+          <div class="col-md-3 text-center">
+          <a href="Impresion-Digital.php">
+            <div class="containera">
+          <img class="card-serv" src="Portafolio/Portada-services/1.jpg" alt="Letras-3D-Corporeas" class="imagea ">
+            <h3 itemprop="services" style="color:#000;"><strong>Letras 3D Corporeas</strong></h3>
+              <div class="overlaya">
+                <div class="texta">Letras 3D Corporeas <br>
+                  <strong>Click aqui</strong> 
+                </div>
+              </div>
+            </div>
+          </a>
           </div>
-        </div>  
-      </section>
+
+          <div class="col-md-3  text-center">
+          <a href="Impresion-Digital.php">
+            <div class="containera">
+          <img class="card-serv" src="Portafolio/Portada-services/2.jpg" alt="Letras-3D-Corporeas" class="imagea ">
+            <h3 itemprop="services" style="color:#000;"><strong>Anuncios Luminosos</strong></h3>
+              <div class="overlaya yellow">
+                <div class="texta">Anuncios Luminosos <br>
+                  <strong>Para sorprenderte dale click</strong> 
+                </div>
+              </div>
+            </div>
+          </a>
+          </div>
+
+          <div class="col-md-3  text-center">
+           <a href="Impresion-Digital.php" style="color:#000;">
+            <div class="containera">
+            <img class="card-serv" src="Portafolio/Portada-services/3.jpg" alt="Señaletica de interiores" class="imagea">
+            <h3 itemprop="Services"style="color:#000;"><strong>Señaletica</strong></h3>
+              <div class="overlaya porple">
+                <div class="texta">Señaletica<br>
+                  <strong>Pare ver da click aqui</strong> </div>
+              </div>
+            </div>
+           </a>
+          </div>
+</div>
+
+<div class="row services-box" style="background-image: url('images/LOGO/background2.png');background-repeat:no-repeat;padding: 60px;">
+
+        <!-- services -->
+        <section class="services py-lg-5 py-md-4 py-3" id="services">
+          <div class="container  py-sm-5 py-4 ">
+                <div class="title-heading text-center mb-sm-5 mb-4"style="border-radius: 10px;">
+                  <h3 class="text-left" itemprop="Service" style="color: #4f1aa6;padding: 50PX;position: relative;left: -50px;">Backligth</h3>
+                    <h4 itemprop="Service"></h4>
+                    <div class="barra" style="background-color: #fff;padding: 5px;width: 200px;position: absolute;top:100px">
+                    </div>
+                  </div>
+           </div>   
+        </section>
+
+          <div class="col-md-3 text-center">
+          <a href="Impresion-Digital.php">
+            <div class="containera">
+          <img class="card-serv" src="Portafolio/Portada-services/1.jpg" alt="Letras-3D-Corporeas" class="imagea ">
+            <h3 itemprop="services" style="color:#000;"><strong>Letras 3D Corporeas</strong></h3>
+              <div class="overlaya">
+                <div class="texta">Letras 3D Corporeas <br>
+                  <strong>Click aqui</strong> 
+                </div>
+              </div>
+            </div>
+          </a>
+          </div>
+
+          <div class="col-md-3  text-center">
+          <a href="Impresion-Digital.php">
+            <div class="containera">
+          <img class="card-serv" src="Portafolio/Portada-services/2.jpg" alt="Letras-3D-Corporeas" class="imagea ">
+            <h3 itemprop="services" style="color:#000;"><strong>Anuncios Luminosos</strong></h3>
+              <div class="overlaya yellow">
+                <div class="texta">Anuncios Luminosos <br>
+                  <strong>Para sorprenderte dale click</strong> 
+                </div>
+              </div>
+            </div>
+          </a>
+          </div>
+
+          <div class="col-md-3  text-center">
+           <a href="Impresion-Digital.php" style="color:#000;">
+            <div class="containera">
+            <img class="card-serv" src="Portafolio/Portada-services/3.jpg" alt="Señaletica de interiores" class="imagea">
+            <h3 itemprop="Services"style="color:#000;"><strong>Señaletica</strong></h3>
+              <div class="overlaya porple">
+                <div class="texta">Señaletica<br>
+                  <strong>Pare ver da click aqui</strong> </div>
+              </div>
+            </div>
+           </a>
+          </div>
+</div>
+
+<div class="row services-box" style="background-image: url('images/LOGO/background3.png');background-repeat:no-repeat;padding: 60px;">
+
+        <!-- services -->
+        <section class="services py-lg-5 py-md-4 py-3" id="services">
+          <div class="container  py-sm-5 py-4 ">
+                <div class="title-heading text-center mb-sm-5 mb-4"style="border-radius: 10px;">
+                  <h3 class="text-left" itemprop="Service" style="color: #4f1aa6;padding: 50PX;position: relative;left: -50px;">Papel</h3>
+                    <h4 itemprop="Service"></h4>
+                    <div class="barra" style="background-color: #fff;padding: 5px;width: 200px;position: absolute;top:100px">
+                    </div>
+                  </div>
+           </div>   
+        </section>
+
+          <div class="col-md-3 text-center">
+          <a href="Impresion-Digital.php">
+            <div class="containera">
+          <img class="card-serv" src="Portafolio/Portada-services/1.jpg" alt="Letras-3D-Corporeas" class="imagea ">
+            <h3 itemprop="services" style="color:#000;"><strong>Letras 3D Corporeas</strong></h3>
+              <div class="overlaya">
+                <div class="texta">Letras 3D Corporeas <br>
+                  <strong>Click aqui</strong> 
+                </div>
+              </div>
+            </div>
+          </a>
+          </div>
+
+          <div class="col-md-3  text-center">
+          <a href="Impresion-Digital.php">
+            <div class="containera">
+          <img class="card-serv" src="Portafolio/Portada-services/2.jpg" alt="Letras-3D-Corporeas" class="imagea ">
+            <h3 itemprop="services" style="color:#000;"><strong>Anuncios Luminosos</strong></h3>
+              <div class="overlaya yellow">
+                <div class="texta">Anuncios Luminosos <br>
+                  <strong>Para sorprenderte dale click</strong> 
+                </div>
+              </div>
+            </div>
+          </a>
+          </div>
+
+          <div class="col-md-3  text-center">
+           <a href="Impresion-Digital.php" style="color:#000;">
+            <div class="containera">
+            <img class="card-serv" src="Portafolio/Portada-services/3.jpg" alt="Señaletica de interiores" class="imagea">
+            <h3 itemprop="Services"style="color:#000;"><strong>Señaletica</strong></h3>
+              <div class="overlaya porple">
+                <div class="texta">Señaletica<br>
+                  <strong>Pare ver da click aqui</strong> </div>
+              </div>
+            </div>
+           </a>
+          </div>
+</div>
+
+
       <!-- End callto Area -->
       <!-- Start About Area -->
       <section class="About-area section-gap" id="about">
