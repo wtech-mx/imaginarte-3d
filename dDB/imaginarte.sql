@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 19-01-2020 a las 23:38:31
+-- Tiempo de generación: 22-01-2020 a las 04:49:23
 -- Versión del servidor: 10.1.37-MariaDB
 -- Versión de PHP: 7.3.1
 
@@ -115,8 +115,7 @@ CREATE TABLE `banner_dig` (
 
 INSERT INTO `banner_dig` (`id`, `titulo`, `descripcion`, `url_image`, `estado`, `orden`) VALUES
 (1, 'Sistema Web de Inventario Simple ', 'https://obedalvarado.pw/blog/sistema-inventario-simple-php/', 'simple_stock_php.png', 1, 1),
-(20, 'SISTEMA PARA FARMACIAS DESARROLLADO CON PHP â€“ MY', 'El sistema de Inventario para farmacias es un software de oficina de farmacia, que cuenta con un diseÃ±o moderno de respuesta ideal para cualquier tipo de negocio de farmacia.', 'inventario_farmacia.png', 1, 6),
-(25, 'Reunion Ordinaria', 'bvbnvnbvnb', 'foto_3.jpg', 1, 1);
+(20, 'SISTEMA PARA FARMACIAS DESARROLLADO CON PHP â€“ MY', 'El sistema de Inventario para farmacias es un software de oficina de farmacia, que cuenta con un diseÃ±o moderno de respuesta ideal para cualquier tipo de negocio de farmacia.', 'inventario_farmacia.png', 1, 6);
 
 -- --------------------------------------------------------
 
@@ -138,11 +137,8 @@ CREATE TABLE `banner_lumi` (
 --
 
 INSERT INTO `banner_lumi` (`id`, `titulo`, `descripcion`, `url_image`, `estado`, `orden`) VALUES
-(1, 'Sistema Web de Inventario Simple ', 'https://obedalvarado.pw/blog/sistema-inventario-simple-php/', 'simple_stock_php.png', 1, 1),
-(21, 'Cotizador web de camisetas con PHP', 'En esta ocasiÃ³n quiero compartir un pequeÃ±o script desarrollado en PHP, el cual cumple la funciÃ³n de cotizador web de productos', 'captura_1.png', 1, 7),
 (22, 'Sistema de GestiÃ³n de Inventario con PHP', 'El Sistema de GestiÃ³n de Inventario es un proyecto de cÃ³digo abierto (Open Source), desarrollado con PHP, MySQL, Bootstrap y jQuery.', 'sistema_gestion_inventario_php.png', 1, 8),
-(25, 'Reunion Ordinaria', 'gvcgcgcgf', 'W-TECHBL6.png', 1, 20),
-(26, '', '', 'demo.png', 0, 0);
+(25, 'Reunion Ordinaria', 'gvcgcgcgf', 'W-TECHBL6.png', 1, 20);
 
 -- --------------------------------------------------------
 
@@ -166,7 +162,6 @@ CREATE TABLE `banner_promo` (
 INSERT INTO `banner_promo` (`id`, `titulo`, `descripcion`, `url_image`, `estado`, `orden`) VALUES
 (1, 'Sistema Web de Inventario Simple ', 'https://obedalvarado.pw/blog/sistema-inventario-simple-php/', 'simple_stock_php.png', 1, 1),
 (17, 'CÃ³mo instalar ionCube Loader en Windows', 'En este tutorial voy a mostrar como instalar ioncube loader en servidor local  con Windows.', 'ioncube-windows.png', 1, 3),
-(19, 'CRUD de datos de empleados con PHP, MySQL y Bootst', 'La creaciÃ³n de un CRUD es una tarea muy comÃºn en el desarrollo web  (CRUD por sus siglas en ingles Create/Read/Update/Delete). ', 'crud_empleados.png', 1, 5),
 (26, 'Reunion Ordinaria', 'lmknnm', '4.jpg', 1, 4),
 (27, '', '', 'demo.png', 0, 0),
 (28, '', '', 'demo.png', 0, 0);
@@ -213,12 +208,8 @@ CREATE TABLE `banner_tab` (
 --
 
 INSERT INTO `banner_tab` (`id`, `titulo`, `descripcion`, `url_image`, `estado`, `orden`) VALUES
-(1, 'Sistema Web de Inventario Simple ', 'https://obedalvarado.pw/blog/sistema-inventario-simple-php/', 'simple_stock_php.png', 1, 1),
-(17, 'CÃ³mo instalar ionCube Loader en Windows', 'En este tutorial voy a mostrar como instalar ioncube loader en servidor local  con Windows.', 'ioncube-windows.png', 1, 3),
-(19, 'CRUD de datos de empleados con PHP, MySQL y Bootst', 'La creaciÃ³n de un CRUD es una tarea muy comÃºn en el desarrollo web  (CRUD por sus siglas en ingles Create/Read/Update/Delete). ', 'crud_empleados.png', 1, 5),
 (20, 'SISTEMA PARA FARMACIAS DESARROLLADO CON PHP â€“ MY', 'El sistema de Inventario para farmacias es un software de oficina de farmacia, que cuenta con un diseÃ±o moderno de respuesta ideal para cualquier tipo de negocio de farmacia.', 'inventario_farmacia.png', 1, 6),
-(21, 'Cotizador web de camisetas con PHP', 'En esta ocasiÃ³n quiero compartir un pequeÃ±o script desarrollado en PHP, el cual cumple la funciÃ³n de cotizador web de productos', 'captura_1.png', 1, 7),
-(22, 'Sistema de GestiÃ³n de Inventario con PHP', 'El Sistema de GestiÃ³n de Inventario es un proyecto de cÃ³digo abierto (Open Source), desarrollado con PHP, MySQL, Bootstrap y jQuery.', 'sistema_gestion_inventario_php.png', 1, 8);
+(21, 'Cotizador web de camisetas con PHP', 'En esta ocasiÃ³n quiero compartir un pequeÃ±o script desarrollado en PHP, el cual cumple la funciÃ³n de cotizador web de productos', 'captura_1.png', 1, 7);
 
 -- --------------------------------------------------------
 
@@ -240,13 +231,8 @@ CREATE TABLE `banner_vin` (
 --
 
 INSERT INTO `banner_vin` (`id`, `titulo`, `descripcion`, `url_image`, `estado`, `orden`) VALUES
-(1, 'Sistema Web de Inventario Simple ', 'https://obedalvarado.pw/blog/sistema-inventario-simple-php/', 'simple_stock_php.png', 1, 1),
-(17, 'CÃ³mo instalar ionCube Loader en Windows', 'En este tutorial voy a mostrar como instalar ioncube loader en servidor local  con Windows.', 'ioncube-windows.png', 1, 3),
 (19, 'CRUD de datos de empleados con PHP, MySQL y Bootst', 'La creaciÃ³n de un CRUD es una tarea muy comÃºn en el desarrollo web  (CRUD por sus siglas en ingles Create/Read/Update/Delete). ', 'crud_empleados.png', 1, 5),
-(20, 'SISTEMA PARA FARMACIAS DESARROLLADO CON PHP â€“ MY', 'El sistema de Inventario para farmacias es un software de oficina de farmacia, que cuenta con un diseÃ±o moderno de respuesta ideal para cualquier tipo de negocio de farmacia.', 'inventario_farmacia.png', 1, 6),
-(21, 'Cotizador web de camisetas con PHP', 'En esta ocasiÃ³n quiero compartir un pequeÃ±o script desarrollado en PHP, el cual cumple la funciÃ³n de cotizador web de productos', 'captura_1.png', 1, 7),
-(22, 'Sistema de GestiÃ³n de Inventario con PHP', 'El Sistema de GestiÃ³n de Inventario es un proyecto de cÃ³digo abierto (Open Source), desarrollado con PHP, MySQL, Bootstrap y jQuery.', 'sistema_gestion_inventario_php.png', 1, 8),
-(25, '', '', 'demo.png', 0, 0);
+(20, 'SISTEMA PARA FARMACIAS DESARROLLADO CON PHP â€“ MY', 'El sistema de Inventario para farmacias es un software de oficina de farmacia, que cuenta con un diseÃ±o moderno de respuesta ideal para cualquier tipo de negocio de farmacia.', 'inventario_farmacia.png', 1, 6);
 
 -- --------------------------------------------------------
 
@@ -268,12 +254,10 @@ CREATE TABLE `productos` (
 INSERT INTO `productos` (`id`, `productos`, `src`, `id_categoria`) VALUES
 (1, 'Letras 3D Corporeas', '../adminBanner/bannerlist-corpo.php', 1),
 (2, 'Anuncios Luminosos', '../adminBanner/bannerlist-lumi.php', 2),
-(3, 'Senaletica', '../adminBanner/bannerlist-sena.php', 3),
 (4, 'Impresion Digital', '../adminBanner/bannerlist-dig.php', 4),
 (5, 'Promocionales', '../adminBanner/bannerlist-promo.php', 5),
-(6, 'Letreros de Acrilico', '../adminBanner/bannerlist-tab.php', 6),
-(7, 'Recorte de vinil', '../adminBanner/bannerlist-vin.php', 7),
-(8, 'Artes Graficas', '../adminBanner/bannerlist-art.php', 8);
+(7, 'Recorte de vinil', '../adminBanner/bannerlist-tab.php', 7),
+(9, 'Neon', '../adminBanner/bannerlist-vin.php', 9);
 
 -- --------------------------------------------------------
 
@@ -288,6 +272,13 @@ CREATE TABLE `productos_subcategorias` (
   `nombre` varchar(255) NOT NULL,
   `src` varchar(255) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Volcado de datos para la tabla `productos_subcategorias`
+--
+
+INSERT INTO `productos_subcategorias` (`id`, `subcategorias`, `id_categoria`, `nombre`, `src`) VALUES
+(1, 'LETRAS DE ALUMINIO', 1, '', '');
 
 -- --------------------------------------------------------
 
@@ -408,19 +399,19 @@ ALTER TABLE `banner_art`
 -- AUTO_INCREMENT de la tabla `banner_corp`
 --
 ALTER TABLE `banner_corp`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=31;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=34;
 
 --
 -- AUTO_INCREMENT de la tabla `banner_dig`
 --
 ALTER TABLE `banner_dig`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=26;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=21;
 
 --
 -- AUTO_INCREMENT de la tabla `banner_lumi`
 --
 ALTER TABLE `banner_lumi`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=27;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=26;
 
 --
 -- AUTO_INCREMENT de la tabla `banner_promo`
@@ -438,25 +429,25 @@ ALTER TABLE `banner_sena`
 -- AUTO_INCREMENT de la tabla `banner_tab`
 --
 ALTER TABLE `banner_tab`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=23;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=22;
 
 --
 -- AUTO_INCREMENT de la tabla `banner_vin`
 --
 ALTER TABLE `banner_vin`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=26;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=21;
 
 --
 -- AUTO_INCREMENT de la tabla `productos`
 --
 ALTER TABLE `productos`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
 
 --
 -- AUTO_INCREMENT de la tabla `productos_subcategorias`
 --
 ALTER TABLE `productos_subcategorias`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
 -- AUTO_INCREMENT de la tabla `slide`

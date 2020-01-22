@@ -300,7 +300,7 @@
           <div class="col-md-3 text-center">
           <a href="Letras-3D-Corporeas.php">
             <div class="containera">
-          <img class="card-serv" src="Portafolio/Portada-services/1.jpg" alt="Letras-3D-Corporeas" class="imagea ">
+          <img class="card-serv" src="Portafolio/letras/x1.jpg" alt="Letras-3D-Corporeas" class="imagea ">
             <h3 itemprop="services" style="color:#000;"><strong>Letras de PVC</strong></h3>
               <div class="overlaya">
                 <div class="texta">Ver más<br>
@@ -314,7 +314,7 @@
           <div class="col-md-3  text-center">
           <a href="Letras-3D-Corporeas.php">
             <div class="containera">
-          <img class="card-serv" src="Portafolio/Portada-services/2.jpg" alt="Letras-3D-Corporeas" class="imagea ">
+          <img class="card-serv" src="Portafolio/letras/x2.png" alt="Letras-3D-Corporeas" class="imagea ">
             <h3 itemprop="services" style="color:#000;"><strong>Letras de PVC</strong></h3>
               <div class="overlaya yellow">
                 <div class="texta">Ver más<br>
@@ -328,7 +328,7 @@
           <div class="col-md-3  text-center">
            <a href="Letras-3D-Corporeas.php" style="color:#000;">
             <div class="containera">
-            <img class="card-serv" src="Portafolio/Portada-services/3.jpg" alt="Señaletica de interiores" class="imagea">
+            <img class="card-serv" src="Portafolio/letras/x3.jfif" alt="Señaletica de interiores" class="imagea">
             <h3 itemprop="Services"style="color:#000;"><strong>Letras de PVC</strong></h3>
               <div class="overlaya porple">
                 <div class="texta">Ver más<br>

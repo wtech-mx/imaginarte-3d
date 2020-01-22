@@ -1,5 +1,6 @@
 <?php 
 	$conexion=mysqli_connect('localhost','root','','imaginarte');
+	//$conexion=mysqli_connect('localhost','user-imaginarte','Imaginarte3d','imaginarte-3d');
  ?>
 
 <div class="contenedor p-5">

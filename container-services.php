@@ -14,12 +14,12 @@
         </section>
 
           <div class="col-md-3  text-center">
-          <a href="Anuncios-Luminosos.php">
+          <a href="Letras-3D.php">
             <div class="containera">
-          <img class="card-serv" src="Portafolio/Portada-services/1.jpg" alt="Letras-3D-Corporeas" class="imagea ">
+          <img class="card-serv" src="PRODUCTOS/1.jpg" alt="Letras-3D-Corporeas" class="imagea ">
             <h3 itemprop="services" style="color:#000;"><strong>Letras 3D Corporeas</strong></h3>
               <div class="overlaya">
-                <div class="texta">Letras 3D Corporeas <br>
+                <div class="texta">Ver más<br>
                   <strong>Click aqui</strong> 
                 </div>
               </div>
@@ -28,12 +28,12 @@
           </div>
 
           <div class="col-md-3  text-center">
-          <a href="Anuncios-Luminosos.php">
+          <a href="Impresion.php">
             <div class="containera">
-          <img class="card-serv" src="Portafolio/Portada-services/2.jpg" alt="Letras-3D-Corporeas" class="imagea ">
-            <h3 itemprop="services" style="color:#000;"><strong>Anuncios Luminosos</strong></h3>
+          <img class="card-serv" src="PRODUCTOS/4.jpg" alt="Letras-3D-Corporeas" class="imagea ">
+            <h3 itemprop="services" style="color:#000;"><strong>Impresion Digital</strong></h3>
               <div class="overlaya yellow">
-                <div class="texta">Anuncios Luminosos <br>
+                <div class="texta">Ver más<br>
                   <strong>Para sorprenderte dale click</strong> 
                 </div>
               </div>
@@ -44,10 +44,10 @@
           <div class="col-md-3  text-center">
            <a href="Señaletica.php" style="color:#000;">
             <div class="containera">
-            <img class="card-serv" src="Portafolio/Portada-services/3.jpg" alt="Señaletica de interiores" class="imagea">
-            <h3 itemprop="Services"style="color:#000;"><strong>Señaletica</strong></h3>
+            <img class="card-serv" src="PRODUCTOS/6.jpg" alt="Señaletica de interiores" class="imagea">
+            <h3 itemprop="Services"style="color:#000;"><strong>Neon</strong></h3>
               <div class="overlaya porple">
-                <div class="texta">Señaletica<br>
+                <div class="texta">Ver más<br>
                   <strong>Pare ver da click aqui</strong> </div>
               </div>
             </div>
@@ -55,12 +55,12 @@
           </div>
 
           <div class="col-md-3  text-center">
-            <a href="Impresion-Digital.php">
+            <a href="Anuncios.php">
              <div class="containera">
-            <img class="card-serv" src="Portafolio/Portada-services/4.jpg" alt="Impresiones digitales" class="imagea">
-            <h3 itemprop="Services" style="color:#000;"><strong>Impresion Digital</strong></h3>
+            <img class="card-serv" src="PRODUCTOS/2.jpg" alt="Impresiones digitales" class="imagea">
+            <h3 itemprop="Services" style="color:#000;"><strong>Anuncos Luminosos</strong></h3>
             <div class="overlaya verde">
-                <div class="texta">Impresion Digital<br>
+                <div class="texta">Ver más<br>
                   <strong>Click aqui</strong> </div>
               </div>
             </div>
@@ -68,12 +68,12 @@
           </div>
 
           <div class="col-md-3  text-center">
-            <a href="Promocionales.php">
+            <a href="Promo.php">
              <div class="containera">
-            <img class="card-serv" src="Portafolio/Portada-services/10.jpg" alt="Promocionales" class="imagea">
+            <img class="card-serv" src="PRODUCTOS/9.jpeg" alt="Promocionales" class="imagea">
             <h3 itemprop="Services" style="color:#000;"><strong>Promocionales</strong></h3>
             <div class="overlaya azul">
-                <div class="texta">Promocionales<br>
+                <div class="texta">Ver más<br>
                   <strong>Para ver dale click</strong> </div>
               </div>
             </div>
@@ -81,30 +81,16 @@
           </div>
 
           <div class="col-md-3  text-center">
-            <a href="Promocionales.php">
+            <a href="Seña.php">
              <div class="containera">
-            <img class="card-serv" src="Portafolio/Portada-services/7.jpg" alt="Promocionales" class="imagea">
-            <h3 itemprop="Services" style="color:#000;"><strong>Tableros decorativos en acrílico</strong></h3>
+            <img class="card-serv" src="PRODUCTOS/5.jpg" alt="Promocionales" class="imagea">
+            <h3 itemprop="Services" style="color:#000;"><strong>Recorte de Vinil</strong></h3>
             <div class="overlaya azul">
-                <div class="texta">Tableros decorativos en acrílico<br>
+                <div class="texta">Ver más<br>
                   <strong>Para ver dale click</strong> </div>
               </div>
             </div>
              </a>
           </div>
 
-
-
-            <div class="col-md-3  text-center">
-             <a href="Señaletica-Protecciion-civil.php">
-             <div class="containera">
-            <img class="card-serv" src="Portafolio/Portada-services/6.jpg" alt="letreros Proteccion civil" class="imagea">
-            <h3 itemprop="services" style="color:#000;"><strong>Señaletica de proteccion civil</strong></h3>
-             <div class="overlaya red">
-                <div class="texta">Señaletica de proteccion civil<br>
-                  <strong>Para tu siguiente señal aqui </strong> </div>
-              </div>
-            </div>
-            </a>
-          </div>
 </div>
