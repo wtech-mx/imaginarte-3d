@@ -32,11 +32,11 @@
                   <div class="card-body">
                     <h2 itemprop="author" style="color: #683cc0"><strong>IMAGINARTE 3D</strong></h2>
                      <div class="barra" style="background-color: #683cc0;padding: 5px;width: 10px;position: absolute;top:70px;height:90px;left: -5px"></div>
-                    <p class="card-text "  itemprop="description" style="color: #000">Somos un equipo de especialistas que promueve <br> soluciones en diseño publicitaario, mediante <br> la elavoracion de productos de alta caliad y de acuerdo a tus necesidades.</p>
+                    <p class="card-text "  itemprop="description" style="color: #000">Somos un equipo de especialistas que promueve <br> soluciones en diseño publicitario, mediante <br> la elaboración de productos de alta caliad y de acuerdo a tus necesidades.</p>
                     <h2 itemprop="author" style="color: #00bdb4"><strong>Misión</strong></h2>
                     <div class="barra" style="background-color: #00bdb4;padding: 5px;width: 10px;position: absolute;top:200px;height:90px;left: -5px"></div>
                     <p class="card-text "  itemprop="description" style="color: #000">
-                      Ofrecer productos y servicios de calidad, <br> que permitan plasmar las ideas compartidas.
+                      Ofrecer productos y servicios de calidad, <br> que permitan plasmar las ideas.
                     </p>
 <!--                    <h2 itemprop="author" style="color: #683cc0"><strong>¿Por qué elegirnos?</strong></h2>
                     <div class="barra" style="background-color: #683cc0;padding: 5px;width: 10px;position: absolute;top:440px;height:260px;left: -5px"></div>

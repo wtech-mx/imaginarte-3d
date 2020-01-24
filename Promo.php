@@ -16,9 +16,9 @@
 
 <body>
 
-    <div class="bg-cont" style="position: relative;top: -20px">
+<!--    <div class="bg-cont" style="position: relative;top: -20px">
       <img class="bg" src="BANNER PRINCIPAL/2.JPG" alt="">
-    </div>
+    </div>-->
 
 <!--      <div class="about py-lg-5 py-md-4 py-3" id="about">   
         <div class="container py-sm-5 py-4">      
