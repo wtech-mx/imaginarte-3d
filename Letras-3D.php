@@ -19,19 +19,15 @@ include("conexion.php");
 
 <body>
 
-<<<<<<< Updated upstream
+
 <!--    <div class="bg-cont" style="position: relative;top: -20px">
       <img class="bg" src="BANNER PRINCIPAL/1.JPG" alt="">
     </div>-->
-=======
-<<<<<<< HEAD
-   
-=======
+
 <!--    <div class="bg-cont" style="position: relative;top: -20px">
       <img class="bg" src="BANNER PRINCIPAL/1.JPG" alt="">
     </div>-->
->>>>>>> 487ee76b31fe0e570f0eeddf6197ff40607fda5b
->>>>>>> Stashed changes
+
 
       <div class="about py-lg-5 py-md-4 py-3" id="about">   
         <div class="container py-sm-5 py-4">      
