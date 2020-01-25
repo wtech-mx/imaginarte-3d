@@ -19,17 +19,12 @@ include("conexion.php");
 
 <body>
 
-<<<<<<< Updated upstream
-=======
-<<<<<<< HEAD
-    
-=======
->>>>>>> Stashed changes
+
 <!--    <div class="bg-cont" style="position: relative;top: -20px">
       <img class="bg" src="BANNER PRINCIPAL/2.JPG" alt="">
     </div>-->
 
->>>>>>> 487ee76b31fe0e570f0eeddf6197ff40607fda5b
+
 <!--      <div class="about py-lg-5 py-md-4 py-3" id="about">   
         <div class="container py-sm-5 py-4">      
           <div class="row">
@@ -76,8 +71,8 @@ include("conexion.php");
           ?>
           
           <div class="col-lg-3 col-md-4 col-xs-6 thumb">
-            <a class="thumbnail" href="#" data-image-id="" data-toggle="modal" data-title="<?php echo $rw_banner_top['titulo'];?>" data-caption="<?php echo $rw_banner_top['descripcion'];  ?>" data-image="img/banner/<?php echo $rw_banner_top['url_image'];?>" data-target="#image-gallery">
-              <img class="img-responsive" src="img/banner/<?php echo $rw_banner_top['url_image'];?>" alt="<?php echo $rw_banner_top['titulo'];?>">
+            <a class="" href="#" data-image-id="" data-toggle="modal" data-title="<?php echo $rw_banner_top['titulo'];?>" data-caption="<?php echo $rw_banner_top['descripcion'];  ?>" data-image="img/banner/<?php echo $rw_banner_top['url_image'];?>" data-target="#image-gallery">
+              <img class="card-serv img-responsive" src="img/banner/<?php echo $rw_banner_top['url_image'];?>" alt="<?php echo $rw_banner_top['titulo'];?>">
             </a>
           </div>
           <?php
@@ -115,8 +110,8 @@ include("conexion.php");
           ?>
           
           <div class="col-lg-3 col-md-4 col-xs-6 thumb">
-            <a class="thumbnail" href="#" data-image-id="" data-toggle="modal" data-title="<?php echo $rw_banner_top['titulo'];?>" data-caption="<?php echo $rw_banner_top['descripcion'];  ?>" data-image="img/banner/<?php echo $rw_banner_top['url_image'];?>" data-target="#image-gallery">
-              <img class="img-responsive" src="img/banner/<?php echo $rw_banner_top['url_image'];?>" alt="<?php echo $rw_banner_top['titulo'];?>">
+            <a class="" href="#" data-image-id="" data-toggle="modal" data-title="<?php echo $rw_banner_top['titulo'];?>" data-caption="<?php echo $rw_banner_top['descripcion'];  ?>" data-image="img/banner/<?php echo $rw_banner_top['url_image'];?>" data-target="#image-gallery">
+              <img class="card-serv img-responsive" src="img/banner/<?php echo $rw_banner_top['url_image'];?>" alt="<?php echo $rw_banner_top['titulo'];?>">
             </a>
           </div>
           <?php
