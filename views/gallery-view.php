@@ -90,7 +90,7 @@
 		                    </a>
 		                    <div class="dropdown-menu" aria-labelledby="dropdownMenuLink" style="font-size: 23px;">
 
-		                    <a class="dropdown-item" href="bannerlist-sena.php">Neon</a>
+		                    <a class="dropdown-item" href="../adminBanner/bannerlist-sena.php">Neon</a>
 		                    </div>
 		                </div>
 					</h5>
@@ -167,7 +167,7 @@
 		                    </a>
 		                    <div class="dropdown-menu" aria-labelledby="dropdownMenuLink" style="font-size: 23px;">
 
-		                    <a class="dropdown-item" href="bannerlist-vin.php">Recorte de vinil</a>
+		                    <a class="dropdown-item" href="../adminBanner/bannerlist-vin.php">Recorte de vinil</a>
 		                    </div>
 		                </div>
 					</h5>
