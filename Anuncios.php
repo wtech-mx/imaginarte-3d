@@ -1,6 +1,9 @@
  <?php
   include("header-letras.php");
  ?>   
+ <?php 
+include("conexion.php");
+?> 
 <style type="text/css" media="screen">
   .bg-cont{
     height: auto;
@@ -16,10 +19,17 @@
 
 <body>
 
+<<<<<<< Updated upstream
+=======
+<<<<<<< HEAD
+  
+=======
+>>>>>>> Stashed changes
 <!--    <div class="bg-cont" style="position: relative;top: -20px">
       <img class="bg" src="BANNER PRINCIPAL/2.JPG" alt="">
     </div>-->
 
+>>>>>>> 487ee76b31fe0e570f0eeddf6197ff40607fda5b
 <!--      <div class="about py-lg-5 py-md-4 py-3" id="about">   
         <div class="container py-sm-5 py-4">      
           <div class="row">
@@ -56,46 +66,25 @@
            </div>   
         </section>
 
-          <div class="col-md-3 text-center">
-          <a href="Anuncios-Luminosos.php">
-            <div class="containera">
-          <img class="card-serv" src="Portafolio/Anuncios liminosos/11.jpeg" alt="Letras-3D-Corporeas" class="imagea ">
-            <h3 itemprop="services" style="color:#000;"><strong>Bandera </strong></h3>
-              <div class="overlaya">
-                <div class="texta">Ver más<br>
-                  <strong>Click aqui</strong> 
-                </div>
-              </div>
-            </div>
-          </a>
+      <?php
+        $nums=1;
+        $sql_banner_top=mysqli_query($con,"select * from banner_lumi where estado=1 order by orden ");
+        while($rw_banner_top=mysqli_fetch_array($sql_banner_top)){
+          ?>
+          
+          <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+            <a class="thumbnail" href="#" data-image-id="" data-toggle="modal" data-title="<?php echo $rw_banner_top['titulo'];?>" data-caption="<?php echo $rw_banner_top['descripcion'];  ?>" data-image="img/banner/<?php echo $rw_banner_top['url_image'];?>" data-target="#image-gallery">
+              <img class="img-responsive" src="img/banner/<?php echo $rw_banner_top['url_image'];?>" alt="<?php echo $rw_banner_top['titulo'];?>">
+            </a>
           </div>
-
-          <div class="col-md-3  text-center">
-          <a href="Anuncios-Luminosos.php">
-            <div class="containera">
-          <img class="card-serv" src="Portafolio/Portada-services/2.jpg" alt="Letras-3D-Corporeas" class="imagea ">
-            <h3 itemprop="services" style="color:#000;"><strong>Bandera</strong></h3>
-              <div class="overlaya yellow">
-                <div class="texta">Ver más<br>
-                  <strong>Para sorprenderte dale click</strong> 
-                </div>
-              </div>
-            </div>
-          </a>
-          </div>
-
-          <div class="col-md-3  text-center">
-           <a href="Anuncios-Luminosos.php" style="color:#000;">
-            <div class="containera">
-            <img class="card-serv" src="Portafolio/Anuncios liminosos/24.jpeg" alt="Señaletica de interiores" class="imagea">
-            <h3 itemprop="Services"style="color:#000;"><strong>Bandera </strong></h3>
-              <div class="overlaya porple">
-                <div class="texta">Ver más<br>
-                  <strong>Pare ver da click aqui</strong> </div>
-              </div>
-            </div>
-           </a>
-          </div>
+          <?php
+          
+          if ($nums%4==0){
+            echo '<div class="clearfix"></div>';
+          }
+          $nums++;
+        }
+      ?>
 </div>
 
 <div class="row services-box" style="background-image: url('images/LOGO/background2.png');background-repeat:no-repeat;padding: 60px;">
@@ -112,46 +101,25 @@
            </div>   
         </section>
 
-          <div class="col-md-3 text-center">
-          <a href="Anuncios-Luminosos.php">
-            <div class="containera">
-          <img class="card-serv" src="Portafolio/Anuncios liminosos/57.jpeg" alt="Letras-3D-Corporeas" class="imagea ">
-            <h3 itemprop="services" style="color:#000;"><strong>Una vista</strong></h3>
-              <div class="overlaya">
-                <div class="texta">Ver más<br>
-                  <strong>Click aqui</strong> 
-                </div>
-              </div>
-            </div>
-          </a>
+          <?php
+        $nums=1;
+        $sql_banner_top=mysqli_query($con,"select * from banner_uvis where estado=1 order by orden ");
+        while($rw_banner_top=mysqli_fetch_array($sql_banner_top)){
+          ?>
+          
+          <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+            <a class="thumbnail" href="#" data-image-id="" data-toggle="modal" data-title="<?php echo $rw_banner_top['titulo'];?>" data-caption="<?php echo $rw_banner_top['descripcion'];  ?>" data-image="img/banner/<?php echo $rw_banner_top['url_image'];?>" data-target="#image-gallery">
+              <img class="img-responsive" src="img/banner/<?php echo $rw_banner_top['url_image'];?>" alt="<?php echo $rw_banner_top['titulo'];?>">
+            </a>
           </div>
-
-          <div class="col-md-3  text-center">
-          <a href="Anuncios-Luminosos.php">
-            <div class="containera">
-          <img class="card-serv" src="Portafolio/Anuncios liminosos/40.jpeg" alt="Letras-3D-Corporeas" class="imagea ">
-            <h3 itemprop="services" style="color:#000;"><strong>Una vista</strong></h3>
-              <div class="overlaya yellow">
-                <div class="texta">Ver más<br>
-                  <strong>Para sorprenderte dale click</strong> 
-                </div>
-              </div>
-            </div>
-          </a>
-          </div>
-
-          <div class="col-md-3  text-center">
-           <a href="Anuncios-Luminosos.php" style="color:#000;">
-            <div class="containera">
-            <img class="card-serv" src="PRODUCTOS/1.jpg" alt="Señaletica de interiores" class="imagea">
-            <h3 itemprop="Services"style="color:#000;"><strong>Una vista</strong></h3>
-              <div class="overlaya porple">
-                <div class="texta">Ver más<br>
-                  <strong>Pare ver da click aqui</strong> </div>
-              </div>
-            </div>
-           </a>
-          </div>
+          <?php
+          
+          if ($nums%4==0){
+            echo '<div class="clearfix"></div>';
+          }
+          $nums++;
+        }
+      ?>
 </div> 
 
 <div class="row services-box" style="background-image: url('images/LOGO/background3.png');background-repeat:no-repeat;padding: 60px;">
@@ -168,46 +136,25 @@
            </div>   
         </section>
 
-          <div class="col-md-3 text-center">
-          <a href="Anuncios-Luminosos.php">
-            <div class="containera">
-          <img class="card-serv" src="Portafolio/Anuncios liminosos/16.jpeg" alt="Letras-3D-Corporeas" class="imagea ">
-            <h3 itemprop="services" style="color:#000;"><strong>Dos vistas</strong></h3>
-              <div class="overlaya">
-                <div class="texta">Ver más<br>
-                  <strong>Click aqui</strong> 
-                </div>
-              </div>
-            </div>
-          </a>
+          <?php
+        $nums=1;
+        $sql_banner_top=mysqli_query($con,"select * from banner_dvis where estado=1 order by orden ");
+        while($rw_banner_top=mysqli_fetch_array($sql_banner_top)){
+          ?>
+          
+          <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+            <a class="thumbnail" href="#" data-image-id="" data-toggle="modal" data-title="<?php echo $rw_banner_top['titulo'];?>" data-caption="<?php echo $rw_banner_top['descripcion'];  ?>" data-image="img/banner/<?php echo $rw_banner_top['url_image'];?>" data-target="#image-gallery">
+              <img class="img-responsive" src="img/banner/<?php echo $rw_banner_top['url_image'];?>" alt="<?php echo $rw_banner_top['titulo'];?>">
+            </a>
           </div>
-
-          <div class="col-md-3  text-center">
-          <a href="Anuncios-Luminosos.php">
-            <div class="containera">
-          <img class="card-serv" src="Portafolio/Anuncios liminosos/21.jpeg" alt="Letras-3D-Corporeas" class="imagea ">
-            <h3 itemprop="services" style="color:#000;"><strong>Dos vistas</strong></h3>
-              <div class="overlaya yellow">
-                <div class="texta">Ver más<br>
-                  <strong>Para sorprenderte dale click</strong> 
-                </div>
-              </div>
-            </div>
-          </a>
-          </div>
-
-          <div class="col-md-3  text-center">
-           <a href="Anuncios-Luminosos.php" style="color:#000;">
-            <div class="containera">
-            <img class="card-serv" src="Portafolio/Anuncios liminosos/23.jpeg" alt="Señaletica de interiores" class="imagea">
-            <h3 itemprop="Services"style="color:#000;"><strong>Dos vistas</strong></h3>
-              <div class="overlaya porple">
-                <div class="texta">Ver más<br>
-                  <strong>Pare ver da click aqui</strong> </div>
-              </div>
-            </div>
-           </a>
-          </div>
+          <?php
+          
+          if ($nums%4==0){
+            echo '<div class="clearfix"></div>';
+          }
+          $nums++;
+        }
+      ?>
 </div>
 
 <div class="row services-box" style="background-image: url('images/LOGO/background.png');background-repeat:no-repeat;padding: 60px;">
@@ -224,19 +171,25 @@
            </div>   
         </section>
 
-          <div class="col-md-3 text-center">
-          <a href="Anuncios-Luminosos.php">
-            <div class="containera">
-          <img class="card-serv" src="Portafolio/Anuncios liminosos/10.jpeg" alt="Letras-3D-Corporeas" class="imagea ">
-            <h3 itemprop="services" style="color:#000;"><strong>Contorno o figura</strong></h3>
-              <div class="overlaya">
-                <div class="texta">Ver más<br>
-                  <strong>Click aqui</strong> 
-                </div>
-              </div>
-            </div>
-          </a>
+          <?php
+        $nums=1;
+        $sql_banner_top=mysqli_query($con,"select * from banner_con where estado=1 order by orden ");
+        while($rw_banner_top=mysqli_fetch_array($sql_banner_top)){
+          ?>
+          
+          <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+            <a class="thumbnail" href="#" data-image-id="" data-toggle="modal" data-title="<?php echo $rw_banner_top['titulo'];?>" data-caption="<?php echo $rw_banner_top['descripcion'];  ?>" data-image="img/banner/<?php echo $rw_banner_top['url_image'];?>" data-target="#image-gallery">
+              <img class="img-responsive" src="img/banner/<?php echo $rw_banner_top['url_image'];?>" alt="<?php echo $rw_banner_top['titulo'];?>">
+            </a>
           </div>
+          <?php
+          
+          if ($nums%4==0){
+            echo '<div class="clearfix"></div>';
+          }
+          $nums++;
+        }
+      ?>
 </div>
 
       <!-- Start callto Area -->

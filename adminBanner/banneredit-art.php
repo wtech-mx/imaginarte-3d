@@ -49,6 +49,7 @@ $active_banner="active";
 	  
 	   <ol class="breadcrumb">
 		  <li><a href="../admin/index.php">Inicio</a></li>
+		  <li><a href="senalitica.php">Senalitica</a></li>
 		  <li><a href="bannerlist-art.php">Galeria</a></li>
 		  <li class="active">Editar</li>
 		</ol>

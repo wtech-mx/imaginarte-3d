@@ -53,6 +53,7 @@ $active_banner="active";
  
 	   <ol class="breadcrumb">
 		  <li><a href="../admin/index.php">Inicio</a></li>
+		  <li><a href="promocionales.php">Promocionales</a></li>
 		  <li><a href="bannerlist-promo.php">Galeria</a></li>
 		  <li class="active">Agregar</li>
 		</ol>

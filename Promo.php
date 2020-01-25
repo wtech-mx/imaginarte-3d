@@ -1,6 +1,9 @@
  <?php
   include("header-letras.php");
- ?>   
+ ?>  
+ <?php 
+include("conexion.php");
+?> 
 <style type="text/css" media="screen">
   .bg-cont{
     height: auto;
@@ -16,10 +19,17 @@
 
 <body>
 
+<<<<<<< Updated upstream
+=======
+<<<<<<< HEAD
+    
+=======
+>>>>>>> Stashed changes
 <!--    <div class="bg-cont" style="position: relative;top: -20px">
       <img class="bg" src="BANNER PRINCIPAL/2.JPG" alt="">
     </div>-->
 
+>>>>>>> 487ee76b31fe0e570f0eeddf6197ff40607fda5b
 <!--      <div class="about py-lg-5 py-md-4 py-3" id="about">   
         <div class="container py-sm-5 py-4">      
           <div class="row">
@@ -56,46 +66,31 @@
            </div>   
         </section>
 
-          <div class="col-md-3 text-center">
-          <a href="Promocionales.php">
+         
+          
             <div class="containera">
-          <img class="card-serv" src="Portafolio/Serigrafia/11.jpeg" alt="Letras-3D-Corporeas" class="imagea ">
-            <h3 itemprop="services" style="color:#000;"><strong>Serigrafia</strong></h3>
-              <div class="overlaya">
-                <div class="texta">Ver más <br>
-                  <strong>Click aqui</strong> 
-                </div>
-              </div>
-            </div>
-          </a>
+                <?php
+        $nums=1;
+        $sql_banner_top=mysqli_query($con,"select * from banner_promo where estado=1 order by orden ");
+        while($rw_banner_top=mysqli_fetch_array($sql_banner_top)){
+          ?>
+          
+          <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+            <a class="thumbnail" href="#" data-image-id="" data-toggle="modal" data-title="<?php echo $rw_banner_top['titulo'];?>" data-caption="<?php echo $rw_banner_top['descripcion'];  ?>" data-image="img/banner/<?php echo $rw_banner_top['url_image'];?>" data-target="#image-gallery">
+              <img class="img-responsive" src="img/banner/<?php echo $rw_banner_top['url_image'];?>" alt="<?php echo $rw_banner_top['titulo'];?>">
+            </a>
           </div>
-
-          <div class="col-md-3  text-center">
-          <a href="Promocionales.php">
-            <div class="containera">
-          <img class="card-serv" src="Portafolio/Serigrafia/6.jpeg" alt="Letras-3D-Corporeas" class="imagea ">
-            <h3 itemprop="services" style="color:#000;"><strong>Serigrafia</strong></h3>
-              <div class="overlaya yellow">
-                <div class="texta">Ver más <br>
-                  <strong>Para sorprenderte dale click</strong> 
-                </div>
-              </div>
+          <?php
+          
+          if ($nums%4==0){
+            echo '<div class="clearfix"></div>';
+          }
+          $nums++;
+        }
+      ?>
             </div>
-          </a>
-          </div>
-
-          <div class="col-md-3  text-center">
-           <a href="Promocionales.php" style="color:#000;">
-            <div class="containera">
-            <img class="card-serv" src="Portafolio/Serigrafia/1.jpeg" alt="Señaletica de interiores" class="imagea">
-            <h3 itemprop="Services"style="color:#000;"><strong>Serigrafia</strong></h3>
-              <div class="overlaya porple">
-                <div class="texta">Ver más<br>
-                  <strong>Pare ver da click aqui</strong> </div>
-              </div>
-            </div>
-           </a>
-          </div>
+        
+          
 </div>
 
 <div class="row services-box" style="background-image: url('images/LOGO/background2.png');background-repeat:no-repeat;padding: 60px;">
@@ -112,46 +107,27 @@
            </div>   
         </section>
 
-          <div class="col-md-3 text-center">
-          <a href="Promocionales.php">
-            <div class="containera">
-          <img class="card-serv" src="Portafolio/Serigrafia/145.jpeg" alt="Letras-3D-Corporeas" class="imagea ">
-            <h3 itemprop="services" style="color:#000;"><strong>Sublimacion</strong></h3>
-              <div class="overlaya">
-                <div class="texta">Ver más <br>
-                  <strong>Click aqui</strong> 
-                </div>
-              </div>
-            </div>
-          </a>
+         <div class="containera">
+                <?php
+        $nums=1;
+        $sql_banner_top=mysqli_query($con,"select * from banner_subli where estado=1 order by orden ");
+        while($rw_banner_top=mysqli_fetch_array($sql_banner_top)){
+          ?>
+          
+          <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+            <a class="thumbnail" href="#" data-image-id="" data-toggle="modal" data-title="<?php echo $rw_banner_top['titulo'];?>" data-caption="<?php echo $rw_banner_top['descripcion'];  ?>" data-image="img/banner/<?php echo $rw_banner_top['url_image'];?>" data-target="#image-gallery">
+              <img class="img-responsive" src="img/banner/<?php echo $rw_banner_top['url_image'];?>" alt="<?php echo $rw_banner_top['titulo'];?>">
+            </a>
           </div>
-
-          <div class="col-md-3  text-center">
-          <a href="Promocionales.php">
-            <div class="containera">
-          <img class="card-serv" src="Portafolio/Serigrafia/s1.png" alt="Letras-3D-Corporeas" class="imagea ">
-            <h3 itemprop="services" style="color:#000;"><strong>Sublimacion</strong></h3>
-              <div class="overlaya yellow">
-                <div class="texta">Ver más <br>
-                  <strong>Para sorprenderte dale click</strong> 
-                </div>
-              </div>
+          <?php
+          
+          if ($nums%4==0){
+            echo '<div class="clearfix"></div>';
+          }
+          $nums++;
+        }
+      ?>
             </div>
-          </a>
-          </div>
-
-          <div class="col-md-3  text-center">
-           <a href="Promocionales.php" style="color:#000;">
-            <div class="containera">
-            <img class="card-serv" src="Portafolio/Serigrafia/4.jpeg" alt="Señaletica de interiores" class="imagea">
-            <h3 itemprop="Services"style="color:#000;"><strong>Sublimacion</strong></h3>
-              <div class="overlaya porple">
-                <div class="texta">Ver más<br>
-                  <strong>Pare ver da click aqui</strong> </div>
-              </div>
-            </div>
-           </a>
-          </div>
 </div> 
       <!-- Start callto Area -->
       <section class="callto pt-50 pb-50">

@@ -32,6 +32,7 @@ $active_banner="active";
 
 		 <ol class="breadcrumb">
 		  <li><a href="../admin/index.php">Inicio</a></li>
+		  <li><a href="anuncios.php">Anuncios</a></li>
 		  <li class="active">Galeria</li>
 		</ol>
 			<div class="row">

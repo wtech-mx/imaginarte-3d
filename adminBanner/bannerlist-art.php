@@ -1,5 +1,5 @@
 <?php
-$title="Promocionales";
+$title="Senalitica";
 /* Llamar la Cadena de Conexion*/ 
 include ("../conexion.php");
 $active_config="active";
@@ -32,6 +32,7 @@ $active_banner="active";
 
 		 <ol class="breadcrumb">
 		  <li><a href="../admin/index.php">Inicio</a></li>
+		  <li><a href="senalitica.php">Senalitica</a></li>
 		  <li class="active">Galeria</li>
 		</ol>
 			<div class="row">

@@ -1,6 +1,9 @@
  <?php
   include("header-letras.php");
  ?>   
+ <?php 
+include("conexion.php");
+?> 
 <style type="text/css" media="screen">
   .bg-cont{
     height: auto;
@@ -16,10 +19,16 @@
 
 <body>
 
+<<<<<<< Updated upstream
+=======
+<<<<<<< HEAD
+=======
+>>>>>>> Stashed changes
 <!--    <div class="bg-cont" style="position: relative;top: -20px">
       <img class="bg" src="BANNER PRINCIPAL/2.JPG" alt="">
     </div>-->
 
+>>>>>>> 487ee76b31fe0e570f0eeddf6197ff40607fda5b
 <!--      <div class="about py-lg-5 py-md-4 py-3" id="about">   
         <div class="container py-sm-5 py-4">      
           <div class="row">
@@ -67,46 +76,25 @@
            </div>   
         </section>
 
-          <div class="col-md-3 text-center">
-          <a href="Impresion-Digital.php">
-            <div class="containera">
-          <img class="card-serv" src="Portafolio/impresion-digital/1.jpg" alt="Letras-3D-Corporeas" class="imagea ">
-            <h3 itemprop="services" style="color:#000;"><strong>Impresion en Vinil</strong></h3>
-              <div class="overlaya">
-                <div class="texta">Ver más<br>
-                  <strong>Click aqui</strong> 
-                </div>
-              </div>
-            </div>
-          </a>
+          <?php
+        $nums=1;
+        $sql_banner_top=mysqli_query($con,"select * from banner_dig where estado=1 order by orden ");
+        while($rw_banner_top=mysqli_fetch_array($sql_banner_top)){
+          ?>
+          
+          <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+            <a class="thumbnail" href="#" data-image-id="" data-toggle="modal" data-title="<?php echo $rw_banner_top['titulo'];?>" data-caption="<?php echo $rw_banner_top['descripcion'];  ?>" data-image="img/banner/<?php echo $rw_banner_top['url_image'];?>" data-target="#image-gallery">
+              <img class="img-responsive" src="img/banner/<?php echo $rw_banner_top['url_image'];?>" alt="<?php echo $rw_banner_top['titulo'];?>">
+            </a>
           </div>
-
-          <div class="col-md-3  text-center">
-          <a href="Impresion-Digital.php">
-            <div class="containera">
-          <img class="card-serv" src="Portafolio/impresion-digital/2.jpg" alt="Letras-3D-Corporeas" class="imagea ">
-            <h3 itemprop="services" style="color:#000;"><strong>Impresion en Vinil</strong></h3>
-              <div class="overlaya yellow">
-                <div class="texta">Anuncios Luminosos <br>
-                  <strong>Para sorprenderte dale click</strong> 
-                </div>
-              </div>
-            </div>
-          </a>
-          </div>
-
-          <div class="col-md-3  text-center">
-           <a href="Impresion-Digital.php" style="color:#000;">
-            <div class="containera">
-            <img class="card-serv" src="Portafolio/impresion-digital/3.jfif" alt="Señaletica de interiores" class="imagea">
-            <h3 itemprop="Services"style="color:#000;"><strong>Impresion en Vinil</strong></h3>
-              <div class="overlaya porple">
-                <div class="texta">Señaletica<br>
-                  <strong>Pare ver da click aqui</strong> </div>
-              </div>
-            </div>
-           </a>
-          </div>
+          <?php
+          
+          if ($nums%4==0){
+            echo '<div class="clearfix"></div>';
+          }
+          $nums++;
+        }
+      ?>
 </div>
 
 <div class="row services-box" style="background-image: url('images/LOGO/background2.png');background-repeat:no-repeat;padding: 60px;">
@@ -123,19 +111,25 @@
            </div>   
         </section>
 
-          <div class="col-md-3 text-center">
-          <a href="Impresion-Digital.php">
-            <div class="containera">
-          <img class="card-serv" src="Portafolio/impresion-digital/14.png" alt="Letras-3D-Corporeas" class="imagea ">
-            <h3 itemprop="services" style="color:#000;"><strong>Impresion en Rigidos</strong></h3>
-              <div class="overlaya">
-                <div class="texta">Ver más <br>
-                  <strong>Click aqui</strong> 
-                </div>
-              </div>
-            </div>
-          </a>
+          <?php
+        $nums=1;
+        $sql_banner_top=mysqli_query($con,"select * from banner_rig where estado=1 order by orden ");
+        while($rw_banner_top=mysqli_fetch_array($sql_banner_top)){
+          ?>
+          
+          <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+            <a class="thumbnail" href="#" data-image-id="" data-toggle="modal" data-title="<?php echo $rw_banner_top['titulo'];?>" data-caption="<?php echo $rw_banner_top['descripcion'];  ?>" data-image="img/banner/<?php echo $rw_banner_top['url_image'];?>" data-target="#image-gallery">
+              <img class="img-responsive" src="img/banner/<?php echo $rw_banner_top['url_image'];?>" alt="<?php echo $rw_banner_top['titulo'];?>">
+            </a>
           </div>
+          <?php
+          
+          if ($nums%4==0){
+            echo '<div class="clearfix"></div>';
+          }
+          $nums++;
+        }
+      ?>
 
 </div> 
 
@@ -153,33 +147,25 @@
            </div>   
         </section>
 
-          <div class="col-md-3 text-center">
-          <a href="Impresion-Digital.php">
-            <div class="containera">
-          <img class="card-serv" src="Portafolio/impresion-digital/6.jpg" alt="Letras-3D-Corporeas" class="imagea ">
-            <h3 itemprop="services" style="color:#000;"><strong>Lona</strong></h3>
-              <div class="overlaya">
-                <div class="texta">Ver más <br>
-                  <strong>Click aqui</strong> 
-                </div>
-              </div>
-            </div>
-          </a>
+          <?php
+        $nums=1;
+        $sql_banner_top=mysqli_query($con,"select * from banner_lona where estado=1 order by orden ");
+        while($rw_banner_top=mysqli_fetch_array($sql_banner_top)){
+          ?>
+          
+          <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+            <a class="thumbnail" href="#" data-image-id="" data-toggle="modal" data-title="<?php echo $rw_banner_top['titulo'];?>" data-caption="<?php echo $rw_banner_top['descripcion'];  ?>" data-image="img/banner/<?php echo $rw_banner_top['url_image'];?>" data-target="#image-gallery">
+              <img class="img-responsive" src="img/banner/<?php echo $rw_banner_top['url_image'];?>" alt="<?php echo $rw_banner_top['titulo'];?>">
+            </a>
           </div>
-
-          <div class="col-md-3  text-center">
-          <a href="Impresion-Digital.php">
-            <div class="containera">
-          <img class="card-serv" src="Portafolio/impresion-digital/7.jpg" alt="Letras-3D-Corporeas" class="imagea ">
-            <h3 itemprop="services" style="color:#000;"><strong>Lona</strong></h3>
-              <div class="overlaya yellow">
-                <div class="texta">Ver más <br>
-                  <strong>Para sorprenderte dale click</strong> 
-                </div>
-              </div>
-            </div>
-          </a>
-          </div>
+          <?php
+          
+          if ($nums%4==0){
+            echo '<div class="clearfix"></div>';
+          }
+          $nums++;
+        }
+      ?>
 
 </div>
 
@@ -197,33 +183,25 @@
            </div>   
         </section>
 
-          <div class="col-md-3 text-center">
-          <a href="Impresion-Digital.php">
-            <div class="containera">
-          <img class="card-serv" src="Portafolio/impresion-digital/8.jfif" alt="Letras-3D-Corporeas" class="imagea ">
-            <h3 itemprop="services" style="color:#000;"><strong>Papel Tapiz</strong></h3>
-              <div class="overlaya">
-                <div class="texta">Ver más<br>
-                  <strong>Click aqui</strong> 
-                </div>
-              </div>
-            </div>
-          </a>
+          <?php
+        $nums=1;
+        $sql_banner_top=mysqli_query($con,"select * from banner_tap where estado=1 order by orden ");
+        while($rw_banner_top=mysqli_fetch_array($sql_banner_top)){
+          ?>
+          
+          <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+            <a class="thumbnail" href="#" data-image-id="" data-toggle="modal" data-title="<?php echo $rw_banner_top['titulo'];?>" data-caption="<?php echo $rw_banner_top['descripcion'];  ?>" data-image="img/banner/<?php echo $rw_banner_top['url_image'];?>" data-target="#image-gallery">
+              <img class="img-responsive" src="img/banner/<?php echo $rw_banner_top['url_image'];?>" alt="<?php echo $rw_banner_top['titulo'];?>">
+            </a>
           </div>
-
-          <div class="col-md-3  text-center">
-          <a href="Impresion-Digital.php">
-            <div class="containera">
-          <img class="card-serv" src="Portafolio/impresion-digital/9.jfif" alt="Letras-3D-Corporeas" class="imagea ">
-            <h3 itemprop="services" style="color:#000;"><strong>Papel Tapiz</strong></h3>
-              <div class="overlaya yellow">
-                <div class="texta">Ver más<br>
-                  <strong>Para sorprenderte dale click</strong> 
-                </div>
-              </div>
-            </div>
-          </a>
-          </div>
+          <?php
+          
+          if ($nums%4==0){
+            echo '<div class="clearfix"></div>';
+          }
+          $nums++;
+        }
+      ?>
 
 </div>
 
@@ -241,46 +219,25 @@
            </div>   
         </section>
 
-          <div class="col-md-3 text-center">
-          <a href="Impresion-Digital.php">
-            <div class="containera">
-          <img class="card-serv" src="Portafolio/impresion-digital/10.jpg" alt="Letras-3D-Corporeas" class="imagea ">
-            <h3 itemprop="services" style="color:#000;"><strong>Backlight</strong></h3>
-              <div class="overlaya">
-                <div class="texta">Ver más <br>
-                  <strong>Click aqui</strong> 
-                </div>
-              </div>
-            </div>
-          </a>
+          <?php
+        $nums=1;
+        $sql_banner_top=mysqli_query($con,"select * from banner_back where estado=1 order by orden ");
+        while($rw_banner_top=mysqli_fetch_array($sql_banner_top)){
+          ?>
+          
+          <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+            <a class="thumbnail" href="#" data-image-id="" data-toggle="modal" data-title="<?php echo $rw_banner_top['titulo'];?>" data-caption="<?php echo $rw_banner_top['descripcion'];  ?>" data-image="img/banner/<?php echo $rw_banner_top['url_image'];?>" data-target="#image-gallery">
+              <img class="img-responsive" src="img/banner/<?php echo $rw_banner_top['url_image'];?>" alt="<?php echo $rw_banner_top['titulo'];?>">
+            </a>
           </div>
-
-          <div class="col-md-3  text-center">
-          <a href="Impresion-Digital.php">
-            <div class="containera">
-          <img class="card-serv" src="Portafolio/impresion-digital/12.jpg" alt="Letras-3D-Corporeas" class="imagea ">
-            <h3 itemprop="services" style="color:#000;"><strong>Backlight</strong></h3>
-              <div class="overlaya yellow">
-                <div class="texta">Ver más <br>
-                  <strong>Para sorprenderte dale click</strong> 
-                </div>
-              </div>
-            </div>
-          </a>
-          </div>
-
-          <div class="col-md-3  text-center">
-           <a href="Impresion-Digital.php" style="color:#000;">
-            <div class="containera">
-            <img class="card-serv" src="Portafolio/impresion-digital/11.jfif" alt="Señaletica de interiores" class="imagea">
-            <h3 itemprop="Services"style="color:#000;"><strong>Backlight</strong></h3>
-              <div class="overlaya porple">
-                <div class="texta">Ver más<br>
-                  <strong>Pare ver da click aqui</strong> </div>
-              </div>
-            </div>
-           </a>
-          </div>
+          <?php
+          
+          if ($nums%4==0){
+            echo '<div class="clearfix"></div>';
+          }
+          $nums++;
+        }
+      ?>
 </div>
 
 <div class="row services-box" style="background-image: url('images/LOGO/background3.png');background-repeat:no-repeat;padding: 60px;">
@@ -297,19 +254,25 @@
            </div>   
         </section>
 
-          <div class="col-md-3 text-center">
-          <a href="Impresion-Digital.php">
-            <div class="containera">
-          <img class="card-serv" src="Portafolio/impresion-digital/13.jfif" alt="Letras-3D-Corporeas" class="imagea ">
-            <h3 itemprop="services" style="color:#000;"><strong>Papel</strong></h3>
-              <div class="overlaya">
-                <div class="texta">Ver más<br>
-                  <strong>Click aqui</strong> 
-                </div>
-              </div>
-            </div>
-          </a>
+          <?php
+        $nums=1;
+        $sql_banner_top=mysqli_query($con,"select * from banner_papel where estado=1 order by orden ");
+        while($rw_banner_top=mysqli_fetch_array($sql_banner_top)){
+          ?>
+          
+          <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+            <a class="thumbnail" href="#" data-image-id="" data-toggle="modal" data-title="<?php echo $rw_banner_top['titulo'];?>" data-caption="<?php echo $rw_banner_top['descripcion'];  ?>" data-image="img/banner/<?php echo $rw_banner_top['url_image'];?>" data-target="#image-gallery">
+              <img class="img-responsive" src="img/banner/<?php echo $rw_banner_top['url_image'];?>" alt="<?php echo $rw_banner_top['titulo'];?>">
+            </a>
           </div>
+          <?php
+          
+          if ($nums%4==0){
+            echo '<div class="clearfix"></div>';
+          }
+          $nums++;
+        }
+      ?>
 
 </div>
 

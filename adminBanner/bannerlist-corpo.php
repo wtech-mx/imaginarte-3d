@@ -33,6 +33,7 @@ $active_banner="active";
 
 		 <ol class="breadcrumb">
 		  <li><a href="../admin/index.php">Inicio</a></li>
+		  <li><a href="letras3d.php">Letras 3D</a></li>
 		  <li class="active">Galeria</li>
 		</ol>
 
