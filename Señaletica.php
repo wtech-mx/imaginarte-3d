@@ -67,11 +67,18 @@ include("conexion.php");
         while($rw_banner_top=mysqli_fetch_array($sql_banner_top)){
           ?>
           
-          <div class="col-lg-3 col-md-4 col-xs-6 thumb">
-            <a class="" href="#" data-image-id="" data-toggle="modal" data-title="<?php echo $rw_banner_top['titulo'];?>" data-caption="<?php echo $rw_banner_top['descripcion'];  ?>" data-image="img/banner/<?php echo $rw_banner_top['url_image'];?>" data-target="#image-gallery">
-              <img class="card-serv img-responsive" src="img/banner/<?php echo $rw_banner_top['url_image'];?>" alt="<?php echo $rw_banner_top['titulo'];?>">
-            </a>
-          </div>
+        <div class="col-md-3  text-center">
+          <a href="" data-toggle="modal" data-target=".bs-example-modal-lg">
+            <div class="containera">
+          <img class="card-serv" src="img/banner/<?php echo $rw_banner_top['url_image'];?>" alt="<?php echo $rw_banner_top['titulo'];?>" class="imagea ">
+            <h3 itemprop="services" style="color:#000;"><strong><?php echo $rw_banner_top['titulo'];?></strong></h3>
+              <div class="overlaya">
+                <div class="texta"><?php echo $rw_banner_top['descripcion'];  ?>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
           <?php
           
           if ($nums%4==0){

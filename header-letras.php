@@ -70,14 +70,14 @@ include("plug-analitcs.php");
     <i class="fa fa-whatsapp whatsapp-icon"></i>
   </a>-->
 
-  <script type="text/javascript" style="">
+<script type="text/javascript" style="">
     (function () {
         var options = {
             facebook: "886997161494916", // Facebook page ID
             whatsapp: "+52 1 55 8770 3080", // WhatsApp number
-            email: "ventas@imaginarte3d.com.mx", // Email
-            sms: "5537356447", // Sms phone number
-            call: "5537356447", // Call phone number
+            email: "ventas@imaginart3d.com", // Email
+            sms: "5587703080", // Sms phone number
+            call: "5587703080", // Call phone number
             company_logo_url: "", // URL of company logo (png, jpg, gif)
             greeting_message: "", // Text of greeting message
             call_to_action: "Cotiza ahora", // Call to action

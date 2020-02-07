@@ -2,28 +2,11 @@
 <html lang="es">
 <head>
 
-<!-- Facebook Pixel Code -->
-<script>
-  !function(f,b,e,v,n,t,s)
-  {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-  n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-  if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-  n.queue=[];t=b.createElement(e);t.async=!0;
-  t.src=v;s=b.getElementsByTagName(e)[0];
-  s.parentNode.insertBefore(t,s)}(window, document,'script',
-  'https://connect.facebook.net/en_US/fbevents.js');
-  fbq('init', '2628181263872360');
-  fbq('track', 'PageView');
-</script>
-<noscript><img height="1" width="1" style="display:none"
-  src="https://www.facebook.com/tr?id=2628181263872360&ev=PageView&noscript=1"
-/></noscript>
-<!-- End Facebook Pixel Code -->
-  
-<title>Imaginarte 3D</title>
   <?php 
 include("plug-analitcs.php");
    ?>
+<title>Imaginarte 3D</title>
+
 <!--meta datos -->
 <meta name="google-site-verification" content="5fOF0_KoQOsbs3ikxih8mgVZ4tgl5lmi6HEe6dz03cM" />
 <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
@@ -31,29 +14,29 @@ include("plug-analitcs.php");
 <meta name="keywords" content="Publicidad, Anuncio, Centro comercial, interior, exterior, anuncios luminosos, letras 3d corporeas, señaletica, impresion digital, propaganda, promocionales, artes graficas, vinil, proteccion civil, letrero, empresa, negocio, ventas, colocacion, espectaculares, anuncios" />
 <meta name="description" content="Imaginarte 3D - Encuentra todo lo necesrio para promocionar tu negocio y hacerlo resaltar de los demas.">    
 
-		<script src="http://code.jquery.com/jquery-latest.js"></script>
-		<!-- bootstrap  -->
-		
-		<!-- fontawesome -->
-		<link href="css/fontawesome-all.min.css" rel="stylesheet" type="text/css" media="all">
-		<!-- gallery css -->
-		<link href="css/prettyPhoto.css" rel="stylesheet" type="text/css" />
-		<!-- estilos-->
-		<link href="css/style.css" rel='stylesheet' type='text/css' media="all">
-     	<link rel="shortcut icon" type="image/x-icon" href="images/new-log.png" />
-		<link rel="stylesheet" href="fonts.css">
-    	<link rel="stylesheet" href="font.css">
-      	<link rel="stylesheet" href="css/main.css">
-  		<link rel="stylesheet" href="main.css">
-     	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="http://code.jquery.com/jquery-latest.js"></script>
+    <!-- bootstrap  -->
+    
+    <!-- fontawesome -->
+    <link href="css/fontawesome-all.min.css" rel="stylesheet" type="text/css" media="all">
+    <!-- gallery css -->
+    <link href="css/prettyPhoto.css" rel="stylesheet" type="text/css" />
+    <!-- estilos-->
+    <link href="css/style.css" rel='stylesheet' type='text/css' media="all">
+      <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico.png" />
+    <link rel="stylesheet" href="fonts.css">
+      <link rel="stylesheet" href="font.css">
+        <link rel="stylesheet" href="css/main.css">
+      <link rel="stylesheet" href="main.css">
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 
-     	<link rel='stylesheet' href='http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css'>
+      <link rel='stylesheet' href='http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css'>
 
-<!--    <div class="social-bar">
+    <div class="social-bar">
     <a href="https://m.facebook.com/imaginart3D/?ref=bookmarks" class="icon icon-facebook" target="_blank"></a>
     <a href="https://www.youtube.com/channel/UCEJK7dFCaXKXX8ZOOwy02QA" class="icon icon-youtube" target="_blank"></a>
     <a href="https://www.instagram.com/imaginarte3d_/" class="icon icon-instagram" target="_blank"></a>
-  </div>-->
+  </div>
 
     <!-- Load Facebook SDK for JavaScript -->
 <div id="fb-root"></div>
@@ -80,10 +63,10 @@ include("plug-analitcs.php");
   theme_color="#7646ff"
   logged_in_greeting="¡Hola!  ¿En que podemos ayudarte?"
   logged_out_greeting="¡Hola!  ¿En que podemos ayudarte?">
-</div>-->
+</div>
+-->
 
-
- <!-- <a href="https://wa.me/5215587703080?text=Hola%20vi%20su%20página%20web,%20quisiera%20más%20información %20sobre%20sus%20servicios" class="whatsapp" target="_blank"> 
+  <!--<a href="https://wa.me/5215587703080?text=Hola%20vi%20su%20pagina%20web,%20quisiera%20mas%20información %20de%20sus%20servicios" class="whatsapp" target="_blank"> 
     <i class="fa fa-whatsapp whatsapp-icon"></i>
   </a>-->
 
@@ -92,9 +75,9 @@ include("plug-analitcs.php");
         var options = {
             facebook: "886997161494916", // Facebook page ID
             whatsapp: "+52 1 55 8770 3080", // WhatsApp number
-            email: "ventas@imaginarte3d.com.mx", // Email
-            sms: "5537356447", // Sms phone number
-            call: "5537356447", // Call phone number
+            email: "ventas@imaginart3d.com", // Email
+            sms: "5587703080", // Sms phone number
+            call: "5587703080", // Call phone number
             company_logo_url: "", // URL of company logo (png, jpg, gif)
             greeting_message: "", // Text of greeting message
             call_to_action: "Cotiza ahora", // Call to action
@@ -109,20 +92,6 @@ include("plug-analitcs.php");
         var x = document.getElementsByTagName('script')[0]; x.parentNode.insertBefore(s, x);
     })();
 </script>
-
-
-  <!-- Load Facebook SDK for JavaScript -->
-  <div id="fb-root"></div>
-  <script>(function(d, s, id) {
-    var js, fjs = d.getElementsByTagName(s)[0];
-    if (d.getElementById(id)) return;
-    js = d.createElement(s); js.id = id;
-    js.src = "https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v3.0";
-    fjs.parentNode.insertBefore(js, fjs);
-  }(document, 'script', 'facebook-jssdk'));</script>
-
-  
-
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
 
 
@@ -163,7 +132,7 @@ include("plug-analitcs.php");
 
         <li class="active"><a class="leters-nav" href="index.php"><strong>Inicio</strong></a></li>
         <li><a class="leters-nav" href="#about"><strong>Nosotros</strong></a></li>
-      	<li class="dropdown">
+        <li class="dropdown">
           <!--<li><a class="leters-nav" href="productos.php"><strong>Productos</strong></a></li>-->
         <li class="dropdown">
           <a class="leters-nav" href="#" class="dropdown-toggle" data-toggle="dropdown"><strong>Productos</strong> <span class="caret"></span></a>
@@ -175,6 +144,7 @@ include("plug-analitcs.php");
 
             <li><a href="Anuncios.php"><strong>Anuncios Luminosos</strong></a></li>
             <li><a href="Promo.php"><strong>Promocionales</strong></a></li>
+            <li><a href="Serigrafia.php"><strong>Señaletica</strong></a></li>
             <li><a href="Seña.php"><strong>Recorte de Vinil</strong></a></li>
 
 
@@ -191,27 +161,11 @@ include("plug-analitcs.php");
         </li>-->
 
 
-      </ul>
-    </div><!-- /.navbar-collapse -->
+      </ul>    </div><!-- /.navbar-collapse -->
   </div><!-- /.container-fluid -->
 </nav>
 
 </div>
 
-
-
-
-<div class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
-  <div class="modal-dialog modal-lg">
-    <div class="modal-content">
-      <?php 
-      include("views/login.view.php");
-       ?>
-    </div>
-  </div>
-</div>
-
-
-
-  	<script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
-	<script src='http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js'></script>
+    <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+  <script src='http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js'></script>

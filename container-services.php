@@ -1,4 +1,4 @@
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
 <div class="row services-box" style="background-image: url('images/LOGO/background.png');background-repeat:no-repeat;padding: 60px;">
 
 
@@ -84,8 +84,21 @@
           <div class="col-md-3  text-center">
             <a href="Seña.php">
              <div class="containera">
-            <img class="card-serv" src="PRODUCTOS/5.jpg" alt="Promocionales" class="imagea">
+            <img class="card-serv" src="PRODUCTOS/3.jpg" alt="Promocionales" class="imagea">
             <h3 itemprop="Services" style="color:#000;"><strong>Recorte de Vinil</strong></h3>
+            <div class="overlaya azul">
+                <div class="texta">Ver más<br>
+                  <strong>Para ver dale click</strong> </div>
+              </div>
+            </div>
+             </a>
+          </div>
+
+          <div class="col-md-3  text-center">
+            <a href="Serigrafia.php">
+             <div class="containera">
+            <img class="card-serv" src="PRODUCTOS/5.jpg" alt="Promocionales" class="imagea">
+            <h3 itemprop="Services" style="color:#000;"><strong>Señaletica</strong></h3>
             <div class="overlaya azul">
                 <div class="texta">Ver más<br>
                   <strong>Para ver dale click</strong> </div>

@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 4.9.0.1
+-- version 4.8.3
 -- https://www.phpmyadmin.net/
 --
--- Servidor: 127.0.0.1
--- Tiempo de generación: 25-01-2020 a las 07:13:12
--- Versión del servidor: 10.4.6-MariaDB
--- Versión de PHP: 7.3.9
+-- Servidor: localhost:3306
+-- Tiempo de generación: 25-01-2020 a las 23:41:29
+-- Versión del servidor: 5.6.44-cll-lve
+-- Versión de PHP: 7.2.7
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET AUTOCOMMIT = 0;
@@ -19,7 +19,7 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Base de datos: `imaginarte`
+-- Base de datos: `imaginarte-3d`
 --
 
 -- --------------------------------------------------------
@@ -43,6 +43,10 @@ INSERT INTO `anuncios` (`id`, `productos`, `src`, `id_categoria`) VALUES
 (1, 'Bandera', '../adminBanner/bannerlist-lumi.php', 1),
 (2, 'Una Vista', '../adminBanner/bannerlist-uvis.php', 2),
 (3, 'Dos Vistas', '../adminBanner/bannerlist-dvis.php', 3),
+(4, 'Contorno o Figura', '../adminBanner/bannerlist-con.php', 4),
+(1, 'Bandera', '../adminBanner/bannerlist-lumi.php', 1),
+(2, 'Una Vista', '../adminBanner/bannerlist-uvis.php', 2),
+(3, 'Dos Vistas', '../adminBanner/bannerlist-dvis.php', 3),
 (4, 'Contorno o Figura', '../adminBanner/bannerlist-con.php', 4);
 
 -- --------------------------------------------------------
@@ -55,7 +59,7 @@ CREATE TABLE `articulos` (
   `id` int(11) NOT NULL,
   `titulo` varchar(250) NOT NULL,
   `extracto` varchar(250) NOT NULL,
-  `fecha` timestamp NOT NULL DEFAULT current_timestamp() ON UPDATE current_timestamp(),
+  `fecha` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
   `texto` text NOT NULL,
   `thumb` varchar(50) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
@@ -65,8 +69,11 @@ CREATE TABLE `articulos` (
 --
 
 INSERT INTO `articulos` (`id`, `titulo`, `extracto`, `fecha`, `texto`, `thumb`) VALUES
-(1, 'Google', 'Google Noticias', '2020-01-09 00:03:32', 'Google Noticias es un agregador y buscador de noticias automatizado que rastrea de forma constante la informacion de los principales medios de comunicacion online.', 'sign-741813_1280.jpg'),
-(2, 'Aceite del motor', 'En caso de no realizar un cambio...', '2020-01-08 07:08:26', 'El sitio web de Google News, elaborado por Google, se actualiza cada 15 minutos y fue lanzado en versiÃ³n beta en abril de 2002.', 'sign-741813_1280.jpg');
+(1, 'Letras 3D', 'Â¿Por que elegir Letras Corporeas 3D?', '2020-01-13 23:04:29', 'Porque son ideales para exterior e interior, visualmente generan gran impacto, debido a su elasticidad y resistencia permiten crear cualquier tipo de forma, las tonalidades e iluminaciÃ³n pueden acoplarse perfectamente a tus necesidades. No requieren mantenimiento y cuentan con mÃ¡xima durabilidad.\r\n\r\nÂ¡Sin duda la mejor inversiÃ³n para potenciar tu Imagen Corporativa!\r\n\r\n\r\n\r\n\r\n\r\n', 'IMG_20190802_175920.jpg'),
+(4, 'CaracterÃ­sticas y cualidades de Letras 3D', 'Lo que tienes que saber...', '2020-01-13 22:52:05', 'Las letras 3D o letras corpÃ³reas ademÃ¡s de brindarle a tu Imagen presencia y atraer la atenciÃ³n del pÃºblico, cuentan con muchas ventajas, como;\r\n\r\n* Alta resistencia a la intemperie (lluvia, sol, viento, polvo, brisa, etc.)\r\n* Materiales ligeros que no comprometen su estabilidad.\r\n* Adaptables a cualquier tipo de sujeciÃ³n (instalaciÃ³n).\r\n*Versatilidad en tonos, acabados e iluminaciÃ³n (luz directa e indirecta).\r\n*Espesor o canto desde 2 hasta 18 cms.\r\n\r\nY muchas cualidades mÃ¡s...\r\n', 'IMG_20200113_165030.jpg'),
+(5, 'Tipos de Letras 3D', 'Materiales', '2020-01-13 23:02:17', 'Para fabricaciÃ³n de letras 3D existen muchos materiales que pueden utilizarse, por ejemplo; Acrilico, Aluminio, Laton, Acero inoxidable, mdf, pvc, etc.\r\n\r\nPueden fabricarse con o sin iluminaciÃ³n y ambas opciones se verÃ¡n encantadoras \r\n\r\n', 'IMG_20191213_235419.jpg'),
+(6, 'Letreros luminosos', 'Â¡IluminaciÃ³n Creativa!', '2020-01-21 05:30:01', ' Elige la iluminaciÃ³n que mÃ¡s se adapte a tus necesidades; Luz frÃ­a, cÃ¡lida o mÃ¡s de 18 colores para que tu letrero resalte de los demÃ¡s.\r\n\r\n\r\n', 'aluminio8.jpg'),
+(7, 'Luz Neon', 'Â¿QuÃ© es?', '2020-01-24 04:10:44', 'La luz de neÃ³n se produce en unos tubos que contienen neÃ³n y otros gases enrarecidos y que, mediante la electricidad, dan una luminiscencia brillantemente increÃ­ble.\r\nÂ¡Dan un efecto de iluminaciÃ³n Ãºnica y son sÃºper originales!', '6.jpg');
 
 -- --------------------------------------------------------
 
@@ -83,16 +90,6 @@ CREATE TABLE `banner_acralu` (
   `orden` int(2) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
---
--- Volcado de datos para la tabla `banner_acralu`
---
-
-INSERT INTO `banner_acralu` (`id`, `titulo`, `descripcion`, `url_image`, `estado`, `orden`) VALUES
-(1, 'Sistema Web de Inventario Simple ', 'https://obedalvarado.pw/blog/sistema-inventario-simple-php/', 'simple_stock_php.png', 1, 1),
-(17, 'CÃ³mo instalar ionCube Loader en Windows', 'En este tutorial voy a mostrar como instalar ioncube loader en servidor local  con Windows.', 'ioncube-windows.png', 1, 3),
-(19, 'CRUD de datos de empleados con PHP, MySQL y Bootst', 'La creaciÃ³n de un CRUD es una tarea muy comÃºn en el desarrollo web  (CRUD por sus siglas en ingles Create/Read/Update/Delete). ', 'crud_empleados.png', 1, 5),
-(26, 'Reunion Ordinaria', 'lmknnm', '4.jpg', 1, 4);
-
 -- --------------------------------------------------------
 
 --
@@ -108,16 +105,6 @@ CREATE TABLE `banner_acri` (
   `orden` int(2) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
---
--- Volcado de datos para la tabla `banner_acri`
---
-
-INSERT INTO `banner_acri` (`id`, `titulo`, `descripcion`, `url_image`, `estado`, `orden`) VALUES
-(1, 'Sistema Web de Inventario Simple ', 'https://obedalvarado.pw/blog/sistema-inventario-simple-php/', 'simple_stock_php.png', 1, 1),
-(19, 'CRUD de datos de empleados con PHP, MySQL y Bootst', 'La creaciÃ³n de un CRUD es una tarea muy comÃºn en el desarrollo web  (CRUD por sus siglas en ingles Create/Read/Update/Delete). ', 'crud_empleados.png', 1, 5),
-(26, 'Reunion Ordinaria', 'lmknnm', '4.jpg', 1, 4),
-(34, 'Reunion Ordinaria', 'khgkhgk', 'pngocean.com.png', 1, 3);
-
 -- --------------------------------------------------------
 
 --
@@ -126,23 +113,13 @@ INSERT INTO `banner_acri` (`id`, `titulo`, `descripcion`, `url_image`, `estado`,
 
 CREATE TABLE `banner_art` (
   `id` int(11) NOT NULL,
+  `id_categoria` int(11) DEFAULT NULL,
   `titulo` varchar(50) NOT NULL,
   `descripcion` varchar(255) NOT NULL,
   `url_image` varchar(255) NOT NULL,
   `estado` int(1) NOT NULL,
   `orden` int(2) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
-
---
--- Volcado de datos para la tabla `banner_art`
---
-
-INSERT INTO `banner_art` (`id`, `titulo`, `descripcion`, `url_image`, `estado`, `orden`) VALUES
-(1, 'Sistema Web de Inventario Simple ', 'https://obedalvarado.pw/blog/sistema-inventario-simple-php/', 'simple_stock_php.png', 1, 1),
-(19, 'CRUD de datos de empleados con PHP, MySQL y Bootst', 'La creaciÃ³n de un CRUD es una tarea muy comÃºn en el desarrollo web  (CRUD por sus siglas en ingles Create/Read/Update/Delete). ', 'crud_empleados.png', 1, 5),
-(22, 'Sistema de GestiÃ³n de Inventario con PHP', 'El Sistema de GestiÃ³n de Inventario es un proyecto de cÃ³digo abierto (Open Source), desarrollado con PHP, MySQL, Bootstrap y jQuery.', 'sistema_gestion_inventario_php.png', 1, 8),
-(25, '', '', 'demo.png', 0, 0),
-(26, '', '', 'demo.png', 0, 0);
 
 -- --------------------------------------------------------
 
@@ -159,16 +136,6 @@ CREATE TABLE `banner_back` (
   `orden` int(2) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
---
--- Volcado de datos para la tabla `banner_back`
---
-
-INSERT INTO `banner_back` (`id`, `titulo`, `descripcion`, `url_image`, `estado`, `orden`) VALUES
-(1, 'Sistema Web de Inventario Simple ', 'https://obedalvarado.pw/blog/sistema-inventario-simple-php/', 'simple_stock_php.png', 1, 1),
-(17, 'CÃ³mo instalar ionCube Loader en Windows', 'En este tutorial voy a mostrar como instalar ioncube loader en servidor local  con Windows.', 'ioncube-windows.png', 1, 3),
-(19, 'CRUD de datos de empleados con PHP, MySQL y Bootst', 'La creaciÃ³n de un CRUD es una tarea muy comÃºn en el desarrollo web  (CRUD por sus siglas en ingles Create/Read/Update/Delete). ', 'crud_empleados.png', 1, 5),
-(26, 'Reunion Ordinaria', 'lmknnm', '4.jpg', 1, 4);
-
 -- --------------------------------------------------------
 
 --
@@ -183,16 +150,6 @@ CREATE TABLE `banner_civil` (
   `estado` int(1) NOT NULL,
   `orden` int(2) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
-
---
--- Volcado de datos para la tabla `banner_civil`
---
-
-INSERT INTO `banner_civil` (`id`, `titulo`, `descripcion`, `url_image`, `estado`, `orden`) VALUES
-(1, 'Sistema Web de Inventario Simple ', 'https://obedalvarado.pw/blog/sistema-inventario-simple-php/', 'simple_stock_php.png', 1, 1),
-(19, 'CRUD de datos de empleados con PHP, MySQL y Bootst', 'La creaciÃ³n de un CRUD es una tarea muy comÃºn en el desarrollo web  (CRUD por sus siglas en ingles Create/Read/Update/Delete). ', 'crud_empleados.png', 1, 5),
-(26, 'Reunion Ordinaria', 'lmknnm', '4.jpg', 1, 4),
-(29, '', '', 'demo.png', 0, 0);
 
 -- --------------------------------------------------------
 
@@ -209,17 +166,6 @@ CREATE TABLE `banner_con` (
   `orden` int(2) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
---
--- Volcado de datos para la tabla `banner_con`
---
-
-INSERT INTO `banner_con` (`id`, `titulo`, `descripcion`, `url_image`, `estado`, `orden`) VALUES
-(1, 'Sistema Web de Inventario Simple ', 'https://obedalvarado.pw/blog/sistema-inventario-simple-php/', 'simple_stock_php.png', 1, 1),
-(17, 'CÃ³mo instalar ionCube Loader en Windows', 'En este tutorial voy a mostrar como instalar ioncube loader en servidor local  con Windows.', 'ioncube-windows.png', 1, 3),
-(19, 'CRUD de datos de empleados con PHP, MySQL y Bootst', 'La creaciÃ³n de un CRUD es una tarea muy comÃºn en el desarrollo web  (CRUD por sus siglas en ingles Create/Read/Update/Delete). ', 'crud_empleados.png', 1, 5),
-(26, 'Reunion Ordinaria', 'lmknnm', '4.jpg', 1, 4),
-(31, '', '', 'demo.png', 0, 0);
-
 -- --------------------------------------------------------
 
 --
@@ -234,14 +180,6 @@ CREATE TABLE `banner_corp` (
   `estado` int(1) NOT NULL,
   `orden` int(2) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
-
---
--- Volcado de datos para la tabla `banner_corp`
---
-
-INSERT INTO `banner_corp` (`id`, `titulo`, `descripcion`, `url_image`, `estado`, `orden`) VALUES
-(2, 'Sistema de FacturaciÃ³n Simple', 'http://obedalvarado.pw/simple-invoice/', 'factura_simple.png', 1, 2),
-(29, 'Prueba ', 'Google Noticias es un agregador y buscador de noticias automatizado que rastrea de forma constante la informaciÃ³n de los principales medios de comunicaciÃ³n online.', 'LogosinF.png', 1, 9);
 
 -- --------------------------------------------------------
 
@@ -258,15 +196,6 @@ CREATE TABLE `banner_dig` (
   `orden` int(2) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
---
--- Volcado de datos para la tabla `banner_dig`
---
-
-INSERT INTO `banner_dig` (`id`, `titulo`, `descripcion`, `url_image`, `estado`, `orden`) VALUES
-(1, 'Sistema Web de Inventario Simple ', 'https://obedalvarado.pw/blog/sistema-inventario-simple-php/', 'simple_stock_php.png', 1, 1),
-(20, 'SISTEMA PARA FARMACIAS DESARROLLADO CON PHP â€“ MY', 'El sistema de Inventario para farmacias es un software de oficina de farmacia, que cuenta con un diseÃ±o moderno de respuesta ideal para cualquier tipo de negocio de farmacia.', 'inventario_farmacia.png', 1, 6),
-(25, 'Reunion Ordinaria', 'bvbnvnbvnb', 'foto_3.jpg', 1, 1);
-
 -- --------------------------------------------------------
 
 --
@@ -281,16 +210,6 @@ CREATE TABLE `banner_dvis` (
   `estado` int(1) NOT NULL,
   `orden` int(2) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
-
---
--- Volcado de datos para la tabla `banner_dvis`
---
-
-INSERT INTO `banner_dvis` (`id`, `titulo`, `descripcion`, `url_image`, `estado`, `orden`) VALUES
-(1, 'Sistema Web de Inventario Simple ', 'https://obedalvarado.pw/blog/sistema-inventario-simple-php/', 'simple_stock_php.png', 1, 1),
-(17, 'CÃ³mo instalar ionCube Loader en Windows', 'En este tutorial voy a mostrar como instalar ioncube loader en servidor local  con Windows.', 'ioncube-windows.png', 1, 3),
-(19, 'CRUD de datos de empleados con PHP, MySQL y Bootst', 'La creaciÃ³n de un CRUD es una tarea muy comÃºn en el desarrollo web  (CRUD por sus siglas en ingles Create/Read/Update/Delete). ', 'crud_empleados.png', 1, 5),
-(26, 'Reunion Ordinaria', 'lmknnm', '4.jpg', 1, 4);
 
 -- --------------------------------------------------------
 
@@ -307,15 +226,6 @@ CREATE TABLE `banner_esp` (
   `orden` int(2) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
---
--- Volcado de datos para la tabla `banner_esp`
---
-
-INSERT INTO `banner_esp` (`id`, `titulo`, `descripcion`, `url_image`, `estado`, `orden`) VALUES
-(1, 'Sistema Web de Inventario Simple ', 'https://obedalvarado.pw/blog/sistema-inventario-simple-php/', 'simple_stock_php.png', 1, 1),
-(17, 'CÃ³mo instalar ionCube Loader en Windows', 'En este tutorial voy a mostrar como instalar ioncube loader en servidor local  con Windows.', 'ioncube-windows.png', 1, 3),
-(26, 'Reunion Ordinaria', 'lmknnm', '4.jpg', 1, 4);
-
 -- --------------------------------------------------------
 
 --
@@ -330,16 +240,6 @@ CREATE TABLE `banner_lona` (
   `estado` int(1) NOT NULL,
   `orden` int(2) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
-
---
--- Volcado de datos para la tabla `banner_lona`
---
-
-INSERT INTO `banner_lona` (`id`, `titulo`, `descripcion`, `url_image`, `estado`, `orden`) VALUES
-(1, 'Sistema Web de Inventario Simple ', 'https://obedalvarado.pw/blog/sistema-inventario-simple-php/', 'simple_stock_php.png', 1, 1),
-(17, 'CÃ³mo instalar ionCube Loader en Windows', 'En este tutorial voy a mostrar como instalar ioncube loader en servidor local  con Windows.', 'ioncube-windows.png', 1, 3),
-(19, 'CRUD de datos de empleados con PHP, MySQL y Bootst', 'La creaciÃ³n de un CRUD es una tarea muy comÃºn en el desarrollo web  (CRUD por sus siglas en ingles Create/Read/Update/Delete). ', 'crud_empleados.png', 1, 5),
-(26, 'Reunion Ordinaria', 'lmknnm', '4.jpg', 1, 4);
 
 -- --------------------------------------------------------
 
@@ -364,7 +264,8 @@ INSERT INTO `banner_lumi` (`id`, `titulo`, `descripcion`, `url_image`, `estado`,
 (1, 'Sistema Web de Inventario Simple ', 'https://obedalvarado.pw/blog/sistema-inventario-simple-php/', 'simple_stock_php.png', 1, 1),
 (21, 'Cotizador web de camisetas con PHP', 'En esta ocasiÃ³n quiero compartir un pequeÃ±o script desarrollado en PHP, el cual cumple la funciÃ³n de cotizador web de productos', 'captura_1.png', 1, 7),
 (22, 'Sistema de GestiÃ³n de Inventario con PHP', 'El Sistema de GestiÃ³n de Inventario es un proyecto de cÃ³digo abierto (Open Source), desarrollado con PHP, MySQL, Bootstrap y jQuery.', 'sistema_gestion_inventario_php.png', 1, 8),
-(25, 'Reunion Ordinaria', 'gvcgcgcgf', 'W-TECHBL6.png', 1, 20);
+(25, 'Reunion Ordinaria', 'gvcgcgcgf', 'W-TECHBL6.png', 1, 20),
+(26, 'Anuncios luminosos ', 'iluminaciÃ³n creativa\r\n', 'aluminio8.jpg', 1, 1);
 
 -- --------------------------------------------------------
 
@@ -381,16 +282,6 @@ CREATE TABLE `banner_mdf` (
   `orden` int(2) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
---
--- Volcado de datos para la tabla `banner_mdf`
---
-
-INSERT INTO `banner_mdf` (`id`, `titulo`, `descripcion`, `url_image`, `estado`, `orden`) VALUES
-(1, 'Sistema Web de Inventario Simple ', 'https://obedalvarado.pw/blog/sistema-inventario-simple-php/', 'simple_stock_php.png', 1, 1),
-(17, 'CÃ³mo instalar ionCube Loader en Windows', 'En este tutorial voy a mostrar como instalar ioncube loader en servidor local  con Windows.', 'ioncube-windows.png', 1, 3),
-(19, 'CRUD de datos de empleados con PHP, MySQL y Bootst', 'La creaciÃ³n de un CRUD es una tarea muy comÃºn en el desarrollo web  (CRUD por sus siglas en ingles Create/Read/Update/Delete). ', 'crud_empleados.png', 1, 5),
-(26, 'Reunion Ordinaria', 'lmknnm', '4.jpg', 1, 4);
-
 -- --------------------------------------------------------
 
 --
@@ -405,17 +296,6 @@ CREATE TABLE `banner_papel` (
   `estado` int(1) NOT NULL,
   `orden` int(2) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
-
---
--- Volcado de datos para la tabla `banner_papel`
---
-
-INSERT INTO `banner_papel` (`id`, `titulo`, `descripcion`, `url_image`, `estado`, `orden`) VALUES
-(1, 'Sistema Web de Inventario Simple ', 'https://obedalvarado.pw/blog/sistema-inventario-simple-php/', 'simple_stock_php.png', 1, 1),
-(17, 'CÃ³mo instalar ionCube Loader en Windows', 'En este tutorial voy a mostrar como instalar ioncube loader en servidor local  con Windows.', 'ioncube-windows.png', 1, 3),
-(19, 'CRUD de datos de empleados con PHP, MySQL y Bootst', 'La creaciÃ³n de un CRUD es una tarea muy comÃºn en el desarrollo web  (CRUD por sus siglas en ingles Create/Read/Update/Delete). ', 'crud_empleados.png', 1, 5),
-(26, 'Reunion Ordinaria', 'lmknnm', '4.jpg', 1, 4),
-(29, '', '', 'demo.png', 0, 0);
 
 -- --------------------------------------------------------
 
@@ -432,16 +312,6 @@ CREATE TABLE `banner_promo` (
   `orden` int(2) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
---
--- Volcado de datos para la tabla `banner_promo`
---
-
-INSERT INTO `banner_promo` (`id`, `titulo`, `descripcion`, `url_image`, `estado`, `orden`) VALUES
-(1, 'Sistema Web de Inventario Simple ', 'https://obedalvarado.pw/blog/sistema-inventario-simple-php/', 'simple_stock_php.png', 1, 1),
-(17, 'CÃ³mo instalar ionCube Loader en Windows', 'En este tutorial voy a mostrar como instalar ioncube loader en servidor local  con Windows.', 'ioncube-windows.png', 1, 3),
-(19, 'CRUD de datos de empleados con PHP, MySQL y Bootst', 'La creaciÃ³n de un CRUD es una tarea muy comÃºn en el desarrollo web  (CRUD por sus siglas en ingles Create/Read/Update/Delete). ', 'crud_empleados.png', 1, 5),
-(26, 'Reunion Ordinaria', 'lmknnm', '4.jpg', 1, 4);
-
 -- --------------------------------------------------------
 
 --
@@ -456,16 +326,6 @@ CREATE TABLE `banner_pvc` (
   `estado` int(1) NOT NULL,
   `orden` int(2) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
-
---
--- Volcado de datos para la tabla `banner_pvc`
---
-
-INSERT INTO `banner_pvc` (`id`, `titulo`, `descripcion`, `url_image`, `estado`, `orden`) VALUES
-(1, 'Sistema Web de Inventario Simple ', 'https://obedalvarado.pw/blog/sistema-inventario-simple-php/', 'simple_stock_php.png', 1, 1),
-(17, 'CÃ³mo instalar ionCube Loader en Windows', 'En este tutorial voy a mostrar como instalar ioncube loader en servidor local  con Windows.', 'ioncube-windows.png', 1, 3),
-(19, 'CRUD de datos de empleados con PHP, MySQL y Bootst', 'La creaciÃ³n de un CRUD es una tarea muy comÃºn en el desarrollo web  (CRUD por sus siglas en ingles Create/Read/Update/Delete). ', 'crud_empleados.png', 1, 5),
-(26, 'Reunion Ordinaria', 'lmknnm', '4.jpg', 1, 4);
 
 -- --------------------------------------------------------
 
@@ -482,17 +342,6 @@ CREATE TABLE `banner_rig` (
   `orden` int(2) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
---
--- Volcado de datos para la tabla `banner_rig`
---
-
-INSERT INTO `banner_rig` (`id`, `titulo`, `descripcion`, `url_image`, `estado`, `orden`) VALUES
-(1, 'Sistema Web de Inventario Simple ', 'https://obedalvarado.pw/blog/sistema-inventario-simple-php/', 'simple_stock_php.png', 1, 1),
-(17, 'CÃ³mo instalar ionCube Loader en Windows', 'En este tutorial voy a mostrar como instalar ioncube loader en servidor local  con Windows.', 'ioncube-windows.png', 1, 3),
-(19, 'CRUD de datos de empleados con PHP, MySQL y Bootst', 'La creaciÃ³n de un CRUD es una tarea muy comÃºn en el desarrollo web  (CRUD por sus siglas en ingles Create/Read/Update/Delete). ', 'crud_empleados.png', 1, 5),
-(26, 'Reunion Ordinaria', 'lmknnm', '4.jpg', 1, 4),
-(30, '', '', 'demo.png', 0, 0);
-
 -- --------------------------------------------------------
 
 --
@@ -507,13 +356,6 @@ CREATE TABLE `banner_sena` (
   `estado` int(1) NOT NULL,
   `orden` int(2) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
-
---
--- Volcado de datos para la tabla `banner_sena`
---
-
-INSERT INTO `banner_sena` (`id`, `titulo`, `descripcion`, `url_image`, `estado`, `orden`) VALUES
-(19, 'CRUD de datos de empleados con PHP, MySQL y Bootst', 'La creaciÃ³n de un CRUD es una tarea muy comÃºn en el desarrollo web  (CRUD por sus siglas en ingles Create/Read/Update/Delete). ', 'crud_empleados.png', 1, 5);
 
 -- --------------------------------------------------------
 
@@ -530,16 +372,6 @@ CREATE TABLE `banner_subli` (
   `orden` int(2) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
---
--- Volcado de datos para la tabla `banner_subli`
---
-
-INSERT INTO `banner_subli` (`id`, `titulo`, `descripcion`, `url_image`, `estado`, `orden`) VALUES
-(1, 'Sistema Web de Inventario Simple ', 'https://obedalvarado.pw/blog/sistema-inventario-simple-php/', 'simple_stock_php.png', 1, 1),
-(17, 'CÃ³mo instalar ionCube Loader en Windows', 'En este tutorial voy a mostrar como instalar ioncube loader en servidor local  con Windows.', 'ioncube-windows.png', 1, 3),
-(19, 'CRUD de datos de empleados con PHP, MySQL y Bootst', 'La creaciÃ³n de un CRUD es una tarea muy comÃºn en el desarrollo web  (CRUD por sus siglas en ingles Create/Read/Update/Delete). ', 'crud_empleados.png', 1, 5),
-(29, '', '', 'demo.png', 0, 0);
-
 -- --------------------------------------------------------
 
 --
@@ -554,18 +386,6 @@ CREATE TABLE `banner_tab` (
   `estado` int(1) NOT NULL,
   `orden` int(2) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
-
---
--- Volcado de datos para la tabla `banner_tab`
---
-
-INSERT INTO `banner_tab` (`id`, `titulo`, `descripcion`, `url_image`, `estado`, `orden`) VALUES
-(1, 'Sistema Web de Inventario Simple ', 'https://obedalvarado.pw/blog/sistema-inventario-simple-php/', 'simple_stock_php.png', 1, 1),
-(17, 'CÃ³mo instalar ionCube Loader en Windows', 'En este tutorial voy a mostrar como instalar ioncube loader en servidor local  con Windows.', 'ioncube-windows.png', 1, 3),
-(19, 'CRUD de datos de empleados con PHP, MySQL y Bootst', 'La creaciÃ³n de un CRUD es una tarea muy comÃºn en el desarrollo web  (CRUD por sus siglas en ingles Create/Read/Update/Delete). ', 'crud_empleados.png', 1, 5),
-(20, 'SISTEMA PARA FARMACIAS DESARROLLADO CON PHP â€“ MY', 'El sistema de Inventario para farmacias es un software de oficina de farmacia, que cuenta con un diseÃ±o moderno de respuesta ideal para cualquier tipo de negocio de farmacia.', 'inventario_farmacia.png', 1, 6),
-(21, 'Cotizador web de camisetas con PHP', 'En esta ocasiÃ³n quiero compartir un pequeÃ±o script desarrollado en PHP, el cual cumple la funciÃ³n de cotizador web de productos', 'captura_1.png', 1, 7),
-(22, 'Sistema de GestiÃ³n de Inventario con PHP', 'El Sistema de GestiÃ³n de Inventario es un proyecto de cÃ³digo abierto (Open Source), desarrollado con PHP, MySQL, Bootstrap y jQuery.', 'sistema_gestion_inventario_php.png', 1, 8);
 
 -- --------------------------------------------------------
 
@@ -582,16 +402,6 @@ CREATE TABLE `banner_tap` (
   `orden` int(2) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
---
--- Volcado de datos para la tabla `banner_tap`
---
-
-INSERT INTO `banner_tap` (`id`, `titulo`, `descripcion`, `url_image`, `estado`, `orden`) VALUES
-(1, 'Sistema Web de Inventario Simple ', 'https://obedalvarado.pw/blog/sistema-inventario-simple-php/', 'simple_stock_php.png', 1, 1),
-(17, 'CÃ³mo instalar ionCube Loader en Windows', 'En este tutorial voy a mostrar como instalar ioncube loader en servidor local  con Windows.', 'ioncube-windows.png', 1, 3),
-(19, 'CRUD de datos de empleados con PHP, MySQL y Bootst', 'La creaciÃ³n de un CRUD es una tarea muy comÃºn en el desarrollo web  (CRUD por sus siglas en ingles Create/Read/Update/Delete). ', 'crud_empleados.png', 1, 5),
-(26, 'Reunion Ordinaria', 'lmknnm', '4.jpg', 1, 4);
-
 -- --------------------------------------------------------
 
 --
@@ -606,16 +416,6 @@ CREATE TABLE `banner_uvis` (
   `estado` int(1) NOT NULL,
   `orden` int(2) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
-
---
--- Volcado de datos para la tabla `banner_uvis`
---
-
-INSERT INTO `banner_uvis` (`id`, `titulo`, `descripcion`, `url_image`, `estado`, `orden`) VALUES
-(1, 'Sistema Web de Inventario Simple ', 'https://obedalvarado.pw/blog/sistema-inventario-simple-php/', 'simple_stock_php.png', 1, 1),
-(17, 'CÃ³mo instalar ionCube Loader en Windows', 'En este tutorial voy a mostrar como instalar ioncube loader en servidor local  con Windows.', 'ioncube-windows.png', 1, 3),
-(19, 'CRUD de datos de empleados con PHP, MySQL y Bootst', 'La creaciÃ³n de un CRUD es una tarea muy comÃºn en el desarrollo web  (CRUD por sus siglas en ingles Create/Read/Update/Delete). ', 'crud_empleados.png', 1, 5),
-(26, 'Reunion Ordinaria', 'lmknnm', '4.jpg', 1, 4);
 
 -- --------------------------------------------------------
 
@@ -637,13 +437,7 @@ CREATE TABLE `banner_vin` (
 --
 
 INSERT INTO `banner_vin` (`id`, `titulo`, `descripcion`, `url_image`, `estado`, `orden`) VALUES
-(1, 'Sistema Web de Inventario Simple ', 'https://obedalvarado.pw/blog/sistema-inventario-simple-php/', 'simple_stock_php.png', 1, 1),
-(17, 'CÃ³mo instalar ionCube Loader en Windows', 'En este tutorial voy a mostrar como instalar ioncube loader en servidor local  con Windows.', 'ioncube-windows.png', 1, 3),
-(19, 'CRUD de datos de empleados con PHP, MySQL y Bootst', 'La creaciÃ³n de un CRUD es una tarea muy comÃºn en el desarrollo web  (CRUD por sus siglas en ingles Create/Read/Update/Delete). ', 'crud_empleados.png', 1, 5),
-(20, 'SISTEMA PARA FARMACIAS DESARROLLADO CON PHP â€“ MY', 'El sistema de Inventario para farmacias es un software de oficina de farmacia, que cuenta con un diseÃ±o moderno de respuesta ideal para cualquier tipo de negocio de farmacia.', 'inventario_farmacia.png', 1, 6),
-(21, 'Cotizador web de camisetas con PHP', 'En esta ocasiÃ³n quiero compartir un pequeÃ±o script desarrollado en PHP, el cual cumple la funciÃ³n de cotizador web de productos', 'captura_1.png', 1, 7),
-(22, 'Sistema de GestiÃ³n de Inventario con PHP', 'El Sistema de GestiÃ³n de Inventario es un proyecto de cÃ³digo abierto (Open Source), desarrollado con PHP, MySQL, Bootstrap y jQuery.', 'sistema_gestion_inventario_php.png', 1, 8),
-(25, '', '', 'demo.png', 0, 0);
+(0, 'modal', 'banner_uvibanner_uvibanner_uvibanner_uvibanner_uvi', 'received_1245346168897933.jpeg', 1, 1);
 
 -- --------------------------------------------------------
 
@@ -713,13 +507,12 @@ CREATE TABLE `productos` (
 --
 
 INSERT INTO `productos` (`id`, `productos`, `src`, `id_categoria`) VALUES
-(1, 'Letras 3D Corporeas', '../adminBanner/letras3d.php', 1),
-(2, 'Anuncios Luminosos', '../adminBanner/anuncios.php', 2),
-(3, 'Neon', '../adminBanner/bannerlist-sena.php', 3),
-(4, 'Impresion Digital', '../adminBanner/digital.php', 4),
-(5, 'Promocionales', '../adminBanner/promocionales.php', 5),
-(7, 'Recorte de vinil', '../adminBanner/bannerlist-vin.php', 7),
-(8, 'Senaletica', '../adminBanner/senalitica.php', 8);
+(1, 'Letras 3D Corporeas', '../adminBanner/bannerlist-corpo.php', 1),
+(2, 'Anuncios Luminosos', '../adminBanner/bannerlist-lumi.php', 2),
+(4, 'Impresion Digital', '../adminBanner/bannerlist-dig.php', 4),
+(5, 'Promocionales', '../adminBanner/bannerlist-promo.php', 5),
+(7, 'Recorte de vinil', '../adminBanner/bannerlist-tab.php', 7),
+(9, 'Neon', '../adminBanner/bannerlist-vin.php', 9);
 
 -- --------------------------------------------------------
 
@@ -734,6 +527,13 @@ CREATE TABLE `productos_subcategorias` (
   `nombre` varchar(255) NOT NULL,
   `src` varchar(255) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Volcado de datos para la tabla `productos_subcategorias`
+--
+
+INSERT INTO `productos_subcategorias` (`id`, `subcategorias`, `id_categoria`, `nombre`, `src`) VALUES
+(1, 'LETRAS DE ALUMINIO', 1, '', '');
 
 -- --------------------------------------------------------
 
@@ -797,18 +597,11 @@ CREATE TABLE `slide` (
 --
 
 INSERT INTO `slide` (`id`, `title`, `boton`, `folder`, `src`, `created_at`) VALUES
-(1, 'promocion de temporada', '', 'uploads/', 'bicycle-1869176_1280_1.jpg', '2020-01-08 18:37:14'),
-(2, 'Algebra Lineal', '', 'uploads/', 'person-731492_1280.jpg', '2020-01-08 20:23:38');
+(9, 'Damos Vida a tus ideas ', '', 'uploads/', '1.jpg', '2020-01-13 16:12:56');
 
 --
 -- Índices para tablas volcadas
 --
-
---
--- Indices de la tabla `anuncios`
---
-ALTER TABLE `anuncios`
-  ADD PRIMARY KEY (`id`);
 
 --
 -- Indices de la tabla `articulos`
@@ -955,12 +748,6 @@ ALTER TABLE `banner_vin`
   ADD PRIMARY KEY (`id`);
 
 --
--- Indices de la tabla `digital`
---
-ALTER TABLE `digital`
-  ADD PRIMARY KEY (`id`);
-
---
 -- Indices de la tabla `letras3d`
 --
 ALTER TABLE `letras3d`
@@ -1004,73 +791,25 @@ ALTER TABLE `slide`
 -- AUTO_INCREMENT de la tabla `articulos`
 --
 ALTER TABLE `articulos`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
-
---
--- AUTO_INCREMENT de la tabla `banner_acralu`
---
-ALTER TABLE `banner_acralu`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=30;
-
---
--- AUTO_INCREMENT de la tabla `banner_acri`
---
-ALTER TABLE `banner_acri`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=37;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
 
 --
 -- AUTO_INCREMENT de la tabla `banner_art`
 --
 ALTER TABLE `banner_art`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=27;
-
---
--- AUTO_INCREMENT de la tabla `banner_back`
---
-ALTER TABLE `banner_back`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=30;
-
---
--- AUTO_INCREMENT de la tabla `banner_civil`
---
-ALTER TABLE `banner_civil`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=30;
-
---
--- AUTO_INCREMENT de la tabla `banner_con`
---
-ALTER TABLE `banner_con`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=32;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=28;
 
 --
 -- AUTO_INCREMENT de la tabla `banner_corp`
 --
 ALTER TABLE `banner_corp`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=38;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=48;
 
 --
 -- AUTO_INCREMENT de la tabla `banner_dig`
 --
 ALTER TABLE `banner_dig`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=27;
-
---
--- AUTO_INCREMENT de la tabla `banner_dvis`
---
-ALTER TABLE `banner_dvis`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=30;
-
---
--- AUTO_INCREMENT de la tabla `banner_esp`
---
-ALTER TABLE `banner_esp`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=30;
-
---
--- AUTO_INCREMENT de la tabla `banner_lona`
---
-ALTER TABLE `banner_lona`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=30;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=26;
 
 --
 -- AUTO_INCREMENT de la tabla `banner_lumi`
@@ -1079,34 +818,10 @@ ALTER TABLE `banner_lumi`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=27;
 
 --
--- AUTO_INCREMENT de la tabla `banner_mdf`
---
-ALTER TABLE `banner_mdf`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=30;
-
---
--- AUTO_INCREMENT de la tabla `banner_papel`
---
-ALTER TABLE `banner_papel`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=30;
-
---
 -- AUTO_INCREMENT de la tabla `banner_promo`
 --
 ALTER TABLE `banner_promo`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=29;
-
---
--- AUTO_INCREMENT de la tabla `banner_pvc`
---
-ALTER TABLE `banner_pvc`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=30;
-
---
--- AUTO_INCREMENT de la tabla `banner_rig`
---
-ALTER TABLE `banner_rig`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=31;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=27;
 
 --
 -- AUTO_INCREMENT de la tabla `banner_sena`
@@ -1115,40 +830,10 @@ ALTER TABLE `banner_sena`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=25;
 
 --
--- AUTO_INCREMENT de la tabla `banner_subli`
---
-ALTER TABLE `banner_subli`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=30;
-
---
--- AUTO_INCREMENT de la tabla `banner_tab`
---
-ALTER TABLE `banner_tab`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=25;
-
---
--- AUTO_INCREMENT de la tabla `banner_tap`
---
-ALTER TABLE `banner_tap`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=30;
-
---
--- AUTO_INCREMENT de la tabla `banner_uvis`
---
-ALTER TABLE `banner_uvis`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=30;
-
---
--- AUTO_INCREMENT de la tabla `banner_vin`
---
-ALTER TABLE `banner_vin`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=26;
-
---
 -- AUTO_INCREMENT de la tabla `slide`
 --
 ALTER TABLE `slide`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
