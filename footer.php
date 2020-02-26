@@ -19,6 +19,8 @@
 		</div>
 		<div class="copyright">
 			<p style="color: #fff">POWER BY |W - TECH <a href="http://w-tech.com.mx" style="color: #fff">WEB TECH</a> </p>
+			<p style="color: #fff"><a href="imagenes.docx" style="color: #fff">Aviso de privacidad</a> </p>
 		</div>
+
 	</div>
 </div>
