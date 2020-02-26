@@ -52,7 +52,7 @@ function pagina_actual(){
 # Funcion para obtener los post determinando cuantos queremos traer por pagina.
 # Return: Los post dependiendo de la pagina que estemos y cuantos post por pagina establecimos.
 function obtener_post($post_por_pagina, $conexion){
-	//1.- Obtenemos la pagina actual
+	// 1.- Obtenemos la pagina actual
 	// $pagina_actual = isset($_GET['p']) ? (int)$_GET['p']: 1;
 	// Para reutilizar el codigo creamos una funcion que nos dice la pagina actual.
 
@@ -61,7 +61,7 @@ function obtener_post($post_por_pagina, $conexion){
 
 	//3.- Preparamos nuestra consulta trayendo la informacion e indicandole desde donde y cuantas filas.
 	// Ademas le pedimos que nos cuente cuantas filas tenemos.
-	$sentencia = $conexion->prepare("SELECT SQL_CALC_FOUND_ROWS * FROM articulos LIMIT {$inicio}, {$post_por_pagina}");
+	$sentencia = $conexion->prepare("SELECT SQL_CALC_FOUND_ROWS * FROM articulos order by id desc LIMIT {$inicio}, {$post_por_pagina}");
 
 	$sentencia->execute();
 	return $sentencia->fetchAll();
