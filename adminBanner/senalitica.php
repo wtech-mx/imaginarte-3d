@@ -28,7 +28,7 @@
 				<tr>
 				<td>
 					
-					<h5><?php echo $mostrar['productos'] ?></h5>
+					<h5><?php echo $mostrar['producto'] ?></h5>
 				</td>
 				
 				<td>
