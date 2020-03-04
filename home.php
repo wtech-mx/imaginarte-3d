@@ -28,6 +28,7 @@ include("plug-analitcs.php");
       <link rel="stylesheet" href="font.css">
         <link rel="stylesheet" href="css/main.css">
       <link rel="stylesheet" href="main.css">
+      <link rel="stylesheet" type="text/css" href="css/button-carrito.css">
       <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 
       <link rel='stylesheet' href='http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css'>
@@ -37,6 +38,15 @@ include("plug-analitcs.php");
     <a href="https://www.youtube.com/channel/UCEJK7dFCaXKXX8ZOOwy02QA" class="icon icon-youtube" target="_blank"></a>
     <a href="https://www.instagram.com/imaginarte3d_/" class="icon icon-instagram" target="_blank"></a>
   </div>
+
+
+
+
+
+  <a href="#" class="social-btn" target="_blank" style="">
+    <img class="img-icon" src="img/smart-cart.png" alt="" >
+  </a>
+
 
     <!-- Load Facebook SDK for JavaScript -->
 <div id="fb-root"></div>
@@ -169,3 +179,12 @@ include("plug-analitcs.php");
 
     <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
   <script src='http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js'></script>
+
+  <script type="text/javascript">
+    
+// add extra elements to buttons for hover, keeps html cleaner
+$('.btn').prepend('<div class="hover"><span></span><span></span><span></span><span></span><span></span></div>');
+
+$('.social-btn').prepend('<div class="hover"><span></span><span></span><span></span><span></span></div>');
+
+  </script>
