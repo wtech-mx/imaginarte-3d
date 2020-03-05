@@ -14,7 +14,7 @@ include("plug-analitcs.php");
 <meta name="keywords" content="Publicidad, Anuncio, Centro comercial, interior, exterior, anuncios luminosos, letras 3d corporeas, señaletica, impresion digital, propaganda, promocionales, artes graficas, vinil, proteccion civil, letrero, empresa, negocio, ventas, colocacion, espectaculares, anuncios" />
 <meta name="description" content="Imaginarte 3D - Encuentra todo lo necesrio para promocionar tu negocio y hacerlo resaltar de los demas.">    
 
-    <script src="http://code.jquery.com/jquery-latest.js"></script>
+    <script src="https://code.jquery.com/jquery-latest.js"></script>
     <!-- bootstrap  -->
     
     <!-- fontawesome -->
@@ -31,7 +31,7 @@ include("plug-analitcs.php");
       <link rel="stylesheet" type="text/css" href="css/button-carrito.css">
       <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 
-      <link rel='stylesheet' href='http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css'>
+      <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css'>
 
     <div class="social-bar">
     <a href="https://m.facebook.com/imaginart3D/?ref=bookmarks" class="icon icon-facebook" target="_blank"></a>
@@ -110,7 +110,7 @@ include("plug-analitcs.php");
 
 </head>
 
-<div itemscope itemtype="http://schema.org/Article">
+<div itemscope itemtype="https://schema.org/Article">
 
 <nav class="navbar" role="navigation">
   <div class="container-fluid">
@@ -177,8 +177,8 @@ include("plug-analitcs.php");
 
 </div>
 
-    <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
-  <script src='http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+  <script src='https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js'></script>
 
   <script type="text/javascript">
     
