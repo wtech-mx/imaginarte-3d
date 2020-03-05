@@ -1,0 +1,185 @@
+
+.img-icon{
+  padding: 0px 0px 0px 5px;
+  width: 80%;
+}
+
+  .social-btn {
+  top: 10%;
+  position: fixed;
+  right: 10px;
+  display: inline-block;
+  margin: 20px 8px 0;
+  width: 40px;
+  height: 40px;
+  z-index: 1;
+  background: #7F5ADC;
+  border-radius: 50%;
+  line-height: 40px;
+  font-size: 20px;
+  font-size: 1.25rem;
+}
+
+.social-btn:before {
+  line-height: inherit;
+}
+
+.social-btn span {
+  position: absolute;
+  display: block;
+  background: #00FF97;
+  opacity: 0;
+  transform: scale(0);
+  transition: transform 0.3s, opacity 0s 0.3s;
+  backface-visibility: hidden;
+}
+.social-btn span:before, .social-btn span:after {
+  position: absolute;
+  display: block;
+  width: 4px;
+  height: 4px;
+  background: #00FF97;
+  content: '';
+}
+.social-btn span:first-child,
+.social-btn span:nth-child(3) {
+  left: 10px;
+  width: 20px;
+  height: 4px;
+}
+.social-btn span:first-child:before, .social-btn span:first-child:after,
+.social-btn span:nth-child(3):before,
+.social-btn span:nth-child(3):after {
+  width: 8px;
+}
+.social-btn span:nth-child(2),
+.social-btn span:last-child {
+  top: 10px;
+  width: 4px;
+  height: 20px;
+}
+.social-btn span:nth-child(2):before, .social-btn span:nth-child(2):after,
+.social-btn span:last-child:before,
+.social-btn span:last-child:after {
+  height: 8px;
+}
+.social-btn span:nth-child(2):before,
+.social-btn span:last-child:before,
+.social-btn span:nth-child(3):before,
+.social-btn span:nth-child(3):after {
+  top: -4px;
+}
+.social-btn span:first-child:after,
+.social-btn span:nth-child(3):after,
+.social-btn span:last-child:before,
+.social-btn span:last-child:after {
+  right: -4px;
+}
+.social-btn span:nth-child(2):after,
+.social-btn span:last-child:after,
+.social-btn span:first-child:before,
+.social-btn span:first-child:after {
+  bottom: -4px;
+}
+.social-btn span:first-child:before,
+.social-btn span:nth-child(3):before,
+.social-btn span:nth-child(2):before,
+.social-btn span:nth-child(2):after {
+  left: -4px;
+}
+.social-btn span:first-child {
+  top: -2px;
+}
+.social-btn span:nth-child(2) {
+  right: -2px;
+}
+.social-btn span:nth-child(3) {
+  bottom: -2px;
+}
+.social-btn span:last-child {
+  left: -2px;
+}
+.social-btn:hover span {
+  opacity: 1;
+  transform: scale(1);
+  transition: transform 0.3s;
+}
+@media (min-width: 48em) {
+  .social-btn {
+    margin: 30px 15px;
+    width: 96px;
+    height: 96px;
+    line-height: 96px;
+    font-size: 45px;
+    font-size: 2.8125rem;
+  }
+
+  .img-icon{
+    padding: 20px;
+    width: 100%;
+  }  
+
+  .social-btn span:before, .social-btn span:after {
+    width: 10px;
+    height: 10px;
+  }
+  .social-btn span:first-child,
+  .social-btn span:nth-child(3) {
+    left: 24px;
+    width: 48px;
+    height: 10px;
+  }
+  .social-btn span:first-child:before, .social-btn span:first-child:after,
+  .social-btn span:nth-child(3):before,
+  .social-btn span:nth-child(3):after {
+    width: 16px;
+  }
+  .social-btn span:nth-child(2),
+  .social-btn span:last-child {
+    top: 24px;
+    width: 10px;
+    height: 48px;
+  }
+  .social-btn span:nth-child(2):before, .social-btn span:nth-child(2):after,
+  .social-btn span:last-child:before,
+  .social-btn span:last-child:after {
+    height: 16px;
+  }
+  .social-btn span:nth-child(2):before,
+  .social-btn span:last-child:before,
+  .social-btn span:nth-child(3):before,
+  .social-btn span:nth-child(3):after {
+    top: -10px;
+  }
+  .social-btn span:first-child:after,
+  .social-btn span:nth-child(3):after,
+  .social-btn span:last-child:before,
+  .social-btn span:last-child:after {
+    right: -10px;
+  }
+  .social-btn span:nth-child(2):after,
+  .social-btn span:last-child:after,
+  .social-btn span:first-child:before,
+  .social-btn span:first-child:after {
+    bottom: -10px;
+  }
+  .social-btn span:first-child:before,
+  .social-btn span:nth-child(3):before,
+  .social-btn span:nth-child(2):before,
+  .social-btn span:nth-child(2):after {
+    left: -10px;
+  }
+  .social-btn span:first-child {
+    top: -6px;
+  }
+  .social-btn span:nth-child(2) {
+    right: -6px;
+  }
+  .social-btn span:nth-child(3) {
+    bottom: -6px;
+  }
+  .social-btn span:last-child {
+    left: -6px;
+  }
+}
+  </style>
