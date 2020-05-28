@@ -2,7 +2,7 @@
 <html lang="es">
 <head>
 
-  <?php 
+  <?php
 include("plug-analitcs.php");
    ?>
 <title>Imaginarte 3D</title>
@@ -12,11 +12,11 @@ include("plug-analitcs.php");
 <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
 <meta charset="UTF-8">
 <meta name="keywords" content="Publicidad, Anuncio, Centro comercial, interior, exterior, anuncios luminosos, letras 3d corporeas, señaletica, impresion digital, propaganda, promocionales, artes graficas, vinil, proteccion civil, letrero, empresa, negocio, ventas, colocacion, espectaculares, anuncios" />
-<meta name="description" content="Imaginarte 3D - Encuentra todo lo necesrio para promocionar tu negocio y hacerlo resaltar de los demas.">    
+<meta name="description" content="Imaginarte 3D - Encuentra todo lo necesrio para promocionar tu negocio y hacerlo resaltar de los demas.">
 
     <script src="https://code.jquery.com/jquery-latest.js"></script>
     <!-- bootstrap  -->
-    
+
     <!-- fontawesome -->
     <link href="css/fontawesome-all.min.css" rel="stylesheet" type="text/css" media="all">
     <!-- gallery css -->
@@ -71,7 +71,7 @@ include("plug-analitcs.php");
 </div>
 -->
 
-  <!--<a href="https://wa.me/5215587703080?text=Hola%20vi%20su%20pagina%20web,%20quisiera%20mas%20información %20de%20sus%20servicios" class="whatsapp" target="_blank"> 
+  <!--<a href="https://wa.me/5215587703080?text=Hola%20vi%20su%20pagina%20web,%20quisiera%20mas%20información %20de%20sus%20servicios" class="whatsapp" target="_blank">
     <i class="fa fa-whatsapp whatsapp-icon"></i>
   </a>-->
 
@@ -100,7 +100,7 @@ include("plug-analitcs.php");
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
 
 
-  
+
 
 
 </head>
@@ -125,7 +125,7 @@ include("plug-analitcs.php");
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav">
-        
+
       </ul>
       <!--<form class="navbar-form navbar-left" role="search">
         <div class="form-group">
@@ -151,6 +151,7 @@ include("plug-analitcs.php");
             <li><a href="Promo.php"><strong>Promocionales</strong></a></li>
             <li><a href="Serigrafia.php"><strong>Señaletica</strong></a></li>
             <li><a href="Seña.php"><strong>Recorte de Vinil</strong></a></li>
+            <li><a href="covid19.php"><strong>La "nueva normalidad" Covid19</strong></a></li>
 
 
           </ul>
@@ -175,7 +176,7 @@ include("plug-analitcs.php");
     <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
   <script src='https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js'></script>
     <script type="text/javascript">
-    
+
 // add extra elements to buttons for hover, keeps html cleaner
 $('.btn').prepend('<div class="hover"><span></span><span></span><span></span><span></span><span></span></div>');
 

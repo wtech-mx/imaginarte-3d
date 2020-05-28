@@ -11,7 +11,7 @@
                     <div class="barra" style="background-color: #fff;padding: 5px;width: 200px;position: absolute;top:100px">
                     </div>
                   </div>
-           </div>   
+           </div>
         </section>
 
           <div class="col-md-3  text-center">
@@ -21,7 +21,7 @@
             <h3 itemprop="services" style="color:#000;"><strong>Letras 3D Corporeas</strong></h3>
               <div class="overlaya">
                 <div class="texta">Ver más<br>
-                  <strong>Click aqui</strong> 
+                  <strong>Click aqui</strong>
                 </div>
               </div>
             </div>
@@ -35,7 +35,7 @@
             <h3 itemprop="services" style="color:#000;"><strong>Impresion Digital</strong></h3>
               <div class="overlaya yellow">
                 <div class="texta">Ver más<br>
-                  <strong>Para sorprenderte dale click</strong> 
+                  <strong>Para sorprenderte dale click</strong>
                 </div>
               </div>
             </div>
@@ -99,6 +99,19 @@
              <div class="containera">
             <img class="card-serv" src="PRODUCTOS/5.jpg" alt="Promocionales" class="imagea">
             <h3 itemprop="Services" style="color:#000;"><strong>Señaletica</strong></h3>
+            <div class="overlaya azul">
+                <div class="texta">Ver más<br>
+                  <strong>Para ver dale click</strong> </div>
+              </div>
+            </div>
+             </a>
+          </div>
+
+          <div class="col-md-3  text-center">
+            <a href="covid19.php">
+             <div class="containera">
+            <img class="card-serv" src="PRODUCTOS/9.jpg" alt="Promocionales" class="imagea">
+            <h3 itemprop="Services" style="color:#000;"><strong>La "nueva normalidad" Covid19</strong></h3>
             <div class="overlaya azul">
                 <div class="texta">Ver más<br>
                   <strong>Para ver dale click</strong> </div>
