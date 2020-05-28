@@ -39,7 +39,7 @@ include("plug-analitcs.php");
     <a href="https://www.instagram.com/imaginarte3d_/" class="icon icon-instagram" target="_blank"></a>
   </div>
 
-    <a href="#" class="social-btn" target="_blank" style="">
+    <a href="https://www.imaginarte3d.com.mx/frontend/" class="social-btn" target="_blank" style="">
     <img class="img-icon" src="img/smart-cart.png" alt="" >
   </a>
 
